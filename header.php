@@ -32,13 +32,13 @@
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/owl.carousel.min.css">
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- Header Wordpress -->
     <?php wp_head(); ?>
     <!-- Fecha Header Wordpress -->
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/script.js" defer></script>
-
+    <script defer src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/script.js"></script>
 </head>
 
 <body>
@@ -49,12 +49,25 @@
         </div>
         <nav>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Histórico</a></li>
-                <li><a href="">Produtos</a></li>
-                <li><a href="">Parceiros</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contato</a></li>
+                <li <?php if (is_page('')) {
+                        echo 'class="active-header"';
+                    } else {} ?>><a href="">Home</a></li>
+                <li <?php if (is_page('historico')) {
+                        echo 'class="active-header"';
+                    } else {} ?>><a href="">Histórico</a></li>
+                <li <?php if (is_page('produtos')) {
+                        echo 'class="active-header"';
+                    } else {} ?>><a href="">Produtos</a></li>
+                <li <?php if (is_page('parceiros')) {
+                        echo 'class="active-header"';
+                    } else { } ?>><a href="">Parceiros</a></li>
+                <li <?php if (is_page('blog')) {
+                        echo 'class="active-header"';
+                    } else {} ?>><a href="">Blog</a></li>
+                <li <?php if (is_page('contato')) {
+                        echo 'class="active-header"';
+                    } else {} ?>><a href="">Contato</a></li>
             </ul>
+
         </nav>
     </header>

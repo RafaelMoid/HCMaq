@@ -1,31 +1,22 @@
 <footer id="footer">
-    <h1>Footer</h1>
+  <h1>Footer</h1>
 </footer>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/jquery.min.js"></script>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/owl.carousel.min.js"></script>
+<script type="module">
+  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+
+  const swiper = new Swiper(...)
+</script>
 <script>
-    $(document).ready(function(){
-      $(".owl-carousel").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        stagePadding: 65,
-        responsive:{
-           0:{
-               items:1
-           },
-           600:{
-               items:2
-           },
-           1000:{
-               items:3
-           },
-           1200:{
-               items:4
-           }
-        }
-      });
-    });
-  </script>
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    autoplay: {
+        delay: 3000, // Tempo de exibição de cada slide em milissegundos
+      }
+  });
+</script>
 </body>
+
 </html>
