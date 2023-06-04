@@ -49,14 +49,14 @@
         </div>
         <nav class="nav-web">
             <ul>
-                <li <?php if (is_page('')) {
+                <li <?php if (is_front_page('')) {
                         echo 'class="active-header"';
                     } else {
-                    } ?>><a href="">Home</a></li>
+                    } ?>><a href="<?php echo get_home_url() ?>">Home</a></li>
                 <li <?php if (is_page('historico')) {
                         echo 'class="active-header"';
                     } else {
-                    } ?>><a href="">Histórico</a></li>
+                    } ?>><a href="<?php echo get_home_url() ?>#historico">Histórico</a></li>
                 <li <?php if (is_page('produtos')) {
                         echo 'class="active-header"';
                     } else {
@@ -64,11 +64,11 @@
                 <li <?php if (is_page('parceiros')) {
                         echo 'class="active-header"';
                     } else {
-                    } ?>><a href="">Parceiros</a></li>
+                    } ?>><a href="<?php echo get_home_url() ?>#parceiros">Parceiros</a></li>
                 <li <?php if (is_page('blog')) {
                         echo 'class="active-header"';
                     } else {
-                    } ?>><a href="">Blog</a></li>
+                    } ?>><a href="<?php echo get_home_url() ?>#blog">Blog</a></li>
                 <li <?php if (is_page('contato')) {
                         echo 'class="active-header"';
                     } else {
@@ -80,27 +80,27 @@
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
             <nav class="menu">
                 <ul>
-                    <li <?php if (is_page('')) {
+                    <li onclick="closeMenu()" <?php if (is_front_page('')) {
                             echo 'class="active-header"';
                         } else {
-                        } ?>><a href="">Home</a></li>
-                    <li <?php if (is_page('historico')) {
+                        } ?>><a href="<?php echo get_home_url() ?>">Home</a></li>
+                    <li onclick="closeMenu()" <?php if (is_page('historico')) {
                             echo 'class="active-header"';
                         } else {
-                        } ?>><a href="">Histórico</a></li>
-                    <li <?php if (is_page('produtos')) {
+                        } ?>><a href="<?php echo get_home_url() ?>#historico">Histórico</a></li>
+                    <li onclick="closeMenu()" <?php if (is_page('produtos')) {
                             echo 'class="active-header"';
                         } else {
                         } ?>><a href="">Produtos</a></li>
-                    <li <?php if (is_page('parceiros')) {
+                    <li onclick="closeMenu()" <?php if (is_page('parceiros')) {
                             echo 'class="active-header"';
                         } else {
-                        } ?>><a href="">Parceiros</a></li>
-                    <li <?php if (is_page('blog')) {
+                        } ?>><a href="<?php echo get_home_url() ?>#parceiros">Parceiros</a></li>
+                    <li onclick="closeMenu()" <?php if (is_page('blog')) {
                             echo 'class="active-header"';
                         } else {
-                        } ?>><a href="">Blog</a></li>
-                    <li <?php if (is_page('contato')) {
+                        } ?>><a href="<?php echo get_home_url() ?>#blog">Blog</a></li>
+                    <li onclick="closeMenu()" <?php if (is_page('contato')) {
                             echo 'class="active-header"';
                         } else {
                         } ?>><a href="">Contato</a></li>

@@ -19,3 +19,10 @@ for (let i = 0; i < produtos.length; i++) {
     hoverProduto.classList.remove('produto-active');
   });
 }
+
+function closeMenu() {
+  var menuToggle = document.getElementById('menu-toggle');
+  if (menuToggle.checked) {
+      menuToggle.checked = false;
+  }
+}

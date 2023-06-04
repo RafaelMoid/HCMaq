@@ -4,7 +4,7 @@
     background: rgba(255, 255, 255, 0.8);
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 1000;
 
     .logo {
         margin: 16px 0 30px 11vw;
@@ -102,7 +102,7 @@
                     position: absolute;
                     top: 100%;
                     left: 0;
-                    background-color: #ffffffaf;
+                    background-color: #ffffffee;
                     width: 100%;
                     // padding: 10px;
 

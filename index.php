@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<main>
-    <h1>Page Index</h1>
+<main id="produto">
+
 </main>
 
 <?php get_footer(); ?>

@@ -12,7 +12,7 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/banner01.jpg);">
+      <div class="swiper-slide" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/produtos-banner-1.png);">
         <div class="slide1-content">
           <h2>
             ELEVE SUA <br />
@@ -53,6 +53,7 @@
         <a href="">Saiba mais</a>
         <!-- Adicionar aqui o Link para o sobre? -->
       </div>
+      <div style="position: absolute; top: -90px; z-index: -100;" id="historico"></div>
   </section>
   <!-- Segunda seção -->
   <!-- Terceira seção -->
@@ -141,7 +142,7 @@
   </section>
   <!-- Seção de diferenciais -->
   <!-- Seção parceiro -->
-  <section class="partners">
+  <section class="partners" style="position:relative;">
     <h2>Nossos Parceiros</h2>
     <div class="swiper">
       <!-- Additional required wrapper -->
@@ -157,6 +158,7 @@
         </div>
       </div>
     </div>
+    <div style="position: absolute; top: -140px; z-index: -100;" id="parceiros"></div>
   </section>
   <!-- Seção parceiro -->
   <!-- Seção Depoimentos -->
@@ -232,7 +234,7 @@
   </section>
   <!-- Seção Depoimentos -->
   <!-- Seção Blog -->
-  <section class="blog">
+  <section class="blog" style="position: relative;">
     <h4>Nosso Blog</h4>
     <h3>Notícias e Dicas Quinzenais</h3>
     <div class="line-depo">
@@ -273,6 +275,7 @@
 
 
     </div>
+    <div style="position: absolute; top: -140px; z-index: -100;" id="blog"></div>
   </section>
   <!-- Seção Blog -->
 </main>
