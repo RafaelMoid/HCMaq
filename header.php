@@ -47,27 +47,64 @@
         <div class="logo">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Logo-HC.png" alt="">
         </div>
-        <nav>
+        <nav class="nav-web">
             <ul>
                 <li <?php if (is_page('')) {
                         echo 'class="active-header"';
-                    } else {} ?>><a href="">Home</a></li>
+                    } else {
+                    } ?>><a href="">Home</a></li>
                 <li <?php if (is_page('historico')) {
                         echo 'class="active-header"';
-                    } else {} ?>><a href="">Histórico</a></li>
+                    } else {
+                    } ?>><a href="">Histórico</a></li>
                 <li <?php if (is_page('produtos')) {
                         echo 'class="active-header"';
-                    } else {} ?>><a href="">Produtos</a></li>
+                    } else {
+                    } ?>><a href="">Produtos</a></li>
                 <li <?php if (is_page('parceiros')) {
                         echo 'class="active-header"';
-                    } else { } ?>><a href="">Parceiros</a></li>
+                    } else {
+                    } ?>><a href="">Parceiros</a></li>
                 <li <?php if (is_page('blog')) {
                         echo 'class="active-header"';
-                    } else {} ?>><a href="">Blog</a></li>
+                    } else {
+                    } ?>><a href="">Blog</a></li>
                 <li <?php if (is_page('contato')) {
                         echo 'class="active-header"';
-                    } else {} ?>><a href="">Contato</a></li>
+                    } else {
+                    } ?>><a href="">Contato</a></li>
             </ul>
 
         </nav>
+        <div class="nav-tablet"> <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <nav class="menu">
+                <ul>
+                    <li <?php if (is_page('')) {
+                            echo 'class="active-header"';
+                        } else {
+                        } ?>><a href="">Home</a></li>
+                    <li <?php if (is_page('historico')) {
+                            echo 'class="active-header"';
+                        } else {
+                        } ?>><a href="">Histórico</a></li>
+                    <li <?php if (is_page('produtos')) {
+                            echo 'class="active-header"';
+                        } else {
+                        } ?>><a href="">Produtos</a></li>
+                    <li <?php if (is_page('parceiros')) {
+                            echo 'class="active-header"';
+                        } else {
+                        } ?>><a href="">Parceiros</a></li>
+                    <li <?php if (is_page('blog')) {
+                            echo 'class="active-header"';
+                        } else {
+                        } ?>><a href="">Blog</a></li>
+                    <li <?php if (is_page('contato')) {
+                            echo 'class="active-header"';
+                        } else {
+                        } ?>><a href="">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>

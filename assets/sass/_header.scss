@@ -2,17 +2,32 @@
     @include container-full;
     @include display(flex, row, space-between, center);
     background: rgba(255, 255, 255, 0.8);
-    position: absolute;
+    position: sticky;
     top: 0;
     z-index: 10;
 
     .logo {
         margin: 16px 0 30px 11vw;
+
+        @include tablet {
+            margin: auto;
+            height: 60px;
+            display: flex;
+            align-items: center;
+
+            img {
+                height: 50%;
+            }
+        }
     }
 
-    nav {
+    .nav-web {
         margin-right: 6vw;
         height: 139px;
+
+        @include tablet {
+            display: none;
+        }
 
         ul {
             @include display (flex, row, center, center);
@@ -22,7 +37,7 @@
                 @include display (flex, row, center, center);
                 padding: 0 12px;
                 height: 100%;
-                
+
                 a {
                     @include display (flex, row, center, center);
                     height: 100%;
@@ -37,11 +52,80 @@
             }
         }
     }
+
+    .nav-tablet {
+        display: none;
+
+        @include tablet {
+            display: flex;
+
+            .menu-icon {
+                cursor: pointer;
+                font-size: 20px;
+            }
+
+            .menu {
+                display: none;
+
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        display: block;
+                        padding: 10px;
+
+                        a {
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+
+            #menu-toggle {
+                display: none;
+            }
+
+            @media screen and (max-width: 768px) {
+                .menu-icon {
+                    display: block;
+                    margin-right: 18px;
+                }
+
+                #menu-toggle:checked~.menu {
+                    display: block;
+                }
+
+                .menu {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background-color: #ffffffaf;
+                    width: 100%;
+                    // padding: 10px;
+
+                    ul {
+                        li {
+                            padding: 10px;
+
+                            a {
+                                display: block;
+                                color: $main-blue;
+                            }
+                        }
+                    }
+                }
+        }
+    }
+}
 }
 
 .active-header {
     background-color: $main-blue;
     color: white;
+
     a {
         color: white !important;
     }

@@ -1,0 +1,156 @@
+#footer {
+    .footer-top {
+        background-color: #00527C;
+        padding: 110px 4vw 65px 11.31vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        .left {
+            width: 33.19vw;
+
+            @include mobile {
+                width: 90vw;
+                margin: 0 auto;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                color: #FFFFFF;
+                padding-top: 50px;
+            }
+        }
+
+        .middle {
+            width: 19.65vw;
+
+            @include mobile {
+                width: 90vw;
+                margin: 60px auto 0 auto;
+            }
+
+            .footer-icons {
+                display: flex;
+                flex-direction: column;
+
+                .icon-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    padding-bottom: 57px;
+
+                    .icon {
+                        padding: 8px;
+                        border: 2px solid #A9ABAE;
+
+                        img {
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+
+                    .icon-text {
+                        padding-left: 21px;
+
+                        h4 {
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 29px;
+                            color: #FFFFFF;
+                            padding-bottom: 8px;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 22px;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+
+        .right {
+            width: 20.83vw;
+
+            @include mobile {
+                width: 90vw;
+                margin: 0 auto;
+            }
+
+            h4 {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+                color: #FFFFFF;
+                padding-bottom: 8px;
+            }
+
+            .footer-blog-posts {
+                a {
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: row;
+
+                    div {
+                        width: 76px;
+                        height: 76px;
+                        background-size: cover;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                    }
+
+                    p {
+                        max-width: 14.65vw;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #FFFFFF;
+                        padding-left: 13px;
+
+                        @include mobile {
+                            width: 100%;
+                            max-width: none;
+                        }
+                    }
+
+                    &:first-child {
+                        margin: 21px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        background-color: #D9D9D9;
+        padding: 26px 0 25px 11.31vw;
+
+        @include mobile {
+            width: 100vw;
+            padding: 0;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: #00527C;
+            @include mobile {
+                font-size: 14px;
+                padding: 16px 0;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+}

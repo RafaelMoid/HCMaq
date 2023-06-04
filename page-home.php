@@ -260,7 +260,7 @@
               <span class="mes"><?php echo get_field('mes'); ?></span>
             </div>
             <p class="resumo-post"><?php echo get_field('resumo_do_post'); ?></p>
-            <a href="">Saiba mais</a>
+            <a href="<?php echo get_post_permalink() ?>">Saiba mais</a>
           </div>
       <?php
         }
