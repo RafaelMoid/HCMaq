@@ -47,7 +47,7 @@
                     <?php
                     $args = array(
                         'post_type'      => 'usado',
-                        'posts_per_page' => 3
+                        'posts_per_page' => -1
                     );
 
                     $query = new WP_Query($args);
@@ -104,10 +104,10 @@
                     <div class="produto">
                         <div class="hover-produto">
                             <h2><?php echo get_field('nome') ?></h2>
-                            <h3><?php echo get_field('resumo_thumb') ?></h3>
+                            <h4><?php echo get_field('resumo_thumb') ?></h3>
                             <a href="<?php echo get_permalink(); ?>">Saiba mais</a>
                         </div>
-                        <img src="<?php echo get_field('thumbnail_image') ?>" alt="<?php echo get_field('titulo_thumb') ?>">
+                        <img src="<?php echo get_field('thumbnail_image') ?>" alt="">
                     </div>
 
             <?php
@@ -143,11 +143,11 @@
 
                     <div class="produto">
                         <div class="hover-produto">
-                            <h2><?php echo get_field('nome') ?></h2>
-                            <h3><?php echo get_field('resumo_thumb') ?></h3>
+                            <h2><?php echo get_field('nome', $post->ID) ?></h2>
+                            <h4><?php echo get_field('resumo_thumb', $post->ID) ?></h4>
                             <a href="<?php echo get_permalink(); ?>">Saiba mais</a>
                         </div>
-                        <img src="<?php echo get_field('thumbnail_image') ?>" alt="<?php echo get_field('titulo_thumb') ?>">
+                        <img src="<?php echo get_field('thumbnail_image', $post->ID) ?>" alt="<?php echo get_field('titulo_thumb') ?>">
                     </div>
 
             <?php

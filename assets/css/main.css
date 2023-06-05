@@ -1169,6 +1169,123 @@ table {
   height: fit-content;
   background-color: white;
 }
+#produtos .acessorios-guindauto {
+  padding-left: 11.31vw;
+  padding-right: 11.31vw;
+  padding-top: 50px;
+}
+#produtos .acessorios-guindauto h5 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #00235A;
+}
+#produtos .acessorios-guindauto h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 46px;
+  color: #006599;
+}
+#produtos .acessorios-guindauto .lines {
+  height: 7px;
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+  margin: 12px 0 50px 0;
+}
+#produtos .acessorios-guindauto .lines .line1 {
+  height: 7px;
+  width: 60px;
+  background-color: #00235A;
+}
+#produtos .acessorios-guindauto .lines .line2 {
+  height: 7px;
+  width: 60px;
+  background-color: #006599;
+}
+#produtos .acessorios-guindauto .acessorios-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 31px;
+  margin-bottom: 84px;
+}
+@media screen and (max-width: 600px) {
+  #produtos .acessorios-guindauto .acessorios-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+#produtos .acessorios-guindauto .acessorios-wrapper .produto {
+  width: 17.7vw;
+  height: 17.7vw;
+  position: relative;
+}
+@media screen and (max-width: 600px) {
+  #produtos .acessorios-guindauto .acessorios-wrapper .produto {
+    width: 80vw;
+    height: 80vw;
+  }
+}
+#produtos .acessorios-guindauto .acessorios-wrapper .produto .hover-produto {
+  position: absolute;
+  display: none;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 30px;
+  z-index: 5;
+  background-color: rgba(0, 101, 153, 0.8);
+}
+#produtos .acessorios-guindauto .acessorios-wrapper .produto .hover-produto h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+#produtos .acessorios-guindauto .acessorios-wrapper .produto .hover-produto h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+  margin-bottom: 17px;
+}
+#produtos .acessorios-guindauto .acessorios-wrapper .produto .hover-produto a {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 153px;
+  height: 58px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: white;
+  background: transparent;
+  border: 2px solid white;
+  z-index: 5;
+}
+#produtos .acessorios-guindauto .acessorios-wrapper .produto .hover-produto a:hover {
+  border: 2px solid #006599;
+  color: #006599;
+  background-color: white;
+}
+#produtos .acessorios-guindauto .acessorios-wrapper .produto img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#produtos .acessorios-guindauto .acessorios-wrapper .produto:hover .hover-produto {
+  display: flex;
+}
 
 #footer .footer-top {
   background-color: #00527C;
@@ -1220,6 +1337,7 @@ table {
 #footer .footer-top .middle .footer-icons .icon-wrapper .icon {
   padding: 8px;
   border: 2px solid #A9ABAE;
+  max-height: 60px;
 }
 #footer .footer-top .middle .footer-icons .icon-wrapper .icon img {
   width: 60px;

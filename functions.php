@@ -27,7 +27,7 @@ function registrar_post_type_produto_destaque() {
         'has_archive'         => true,
         'publicly_queryable'  => true,
         'query_var'           => true,
-        'rewrite'             => array( 'slug' => 'produto' ),
+        'rewrite'             => array( 'slug' => 'produto-destaque' ),
         'capability_type'     => 'post',
         'hierarchical'        => false,
         'supports'            => array( 'title', 'editor', 'thumbnail' ),
@@ -35,7 +35,7 @@ function registrar_post_type_produto_destaque() {
         'menu_icon'           => 'dashicons-cart',
     );
 
-    register_post_type( 'produto', $args );
+    register_post_type( 'produto-destaque', $args );
 
     $labels_taxonomia = array(
         'name'              => 'Categorias de Produto Destaque',
@@ -62,7 +62,7 @@ function registrar_post_type_produto_destaque() {
         'rewrite'             => array( 'slug' => 'categoria-produto' )
     );
 
-    register_taxonomy( 'categoria-produto', 'produto', $args_taxonomia );
+    register_taxonomy( 'categoria-produto', 'produto-destaque', $args_taxonomia );
 }
 add_action( 'init', 'registrar_post_type_produto_destaque' );
 
@@ -120,7 +120,7 @@ function registrar_post_type_usado() {
         'show_admin_column'   => true,
         'show_in_nav_menus'   => true,
         'show_tagcloud'       => false,
-        'rewrite'             => array( 'slug' => 'categoria-produto' )
+        'rewrite'             => array( 'slug' => 'usado' )
     );
 
     register_taxonomy( 'categoria-usado', 'usado', $args_taxonomia );
