@@ -60,7 +60,7 @@
                 <li <?php if (is_page('produtos')) {
                         echo 'class="active-header"';
                     } else {
-                    } ?>><a href="">Produtos</a></li>
+                    } ?>><a href="<?php echo get_home_url() ?>/produtos">Produtos</a></li>
                 <li <?php if (is_page('parceiros')) {
                         echo 'class="active-header"';
                     } else {
@@ -91,7 +91,7 @@
                     <li onclick="closeMenu()" <?php if (is_page('produtos')) {
                             echo 'class="active-header"';
                         } else {
-                        } ?>><a href="">Produtos</a></li>
+                        } ?>><a href="<?php echo get_home_url() ?>/produtos">Produtos</a></li>
                     <li onclick="closeMenu()" <?php if (is_page('parceiros')) {
                             echo 'class="active-header"';
                         } else {

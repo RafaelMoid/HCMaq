@@ -90,8 +90,7 @@
         <div class="acessorios-wrapper">
             <?php
             $args = array(
-                'post_type'      => 'produto',
-                'category_name' => 'acessorios-para-guindautos',
+                'post_type'      => 'acessorio-guindauto',
                 'posts_per_page' => -1
             );
 
@@ -120,6 +119,46 @@
         </div>
     </section>
     <!-- Grid com Acessorios para Guindauto -->
+    <!-- Grid com Acessorios para diversos -->
+    <section class="acessorios-guindauto">
+        <h5>Conheça nossas opções</h5>
+        <h3>Guindautos Semi-Novos</h3>
+        <div class="lines">
+            <div class="line1"></div>
+            <div class="line2"></div>
+        </div>
+        <div class="acessorios-wrapper">
+            <?php
+            $args = array(
+                'post_type'      => 'acessorio',
+                'posts_per_page' => -1
+            );
+
+            $query = new WP_Query($args);
+
+            if ($query->have_posts()) {
+                while ($query->have_posts()) {
+                    $query->the_post();
+            ?>
+
+                    <div class="produto">
+                        <div class="hover-produto">
+                            <h2><?php echo get_field('nome') ?></h2>
+                            <h3><?php echo get_field('resumo_thumb') ?></h3>
+                            <a href="<?php echo get_permalink(); ?>">Saiba mais</a>
+                        </div>
+                        <img src="<?php echo get_field('thumbnail_image') ?>" alt="<?php echo get_field('titulo_thumb') ?>">
+                    </div>
+
+            <?php
+                }
+            }
+
+            wp_reset_postdata();
+            ?>
+        </div>
+    </section>
+    <!-- Grid com Acessorios diversos -->
 </main>
 
 <?php get_footer(); ?>
