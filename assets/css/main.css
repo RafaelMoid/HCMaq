@@ -1287,6 +1287,154 @@ table {
   display: flex;
 }
 
+#historico {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#historico .histo-top {
+  max-width: 100vw;
+  height: calc(85vh - 136px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 11.31vw;
+}
+#historico .histo-top h1 {
+  width: fit-content;
+  font-weight: 900;
+  font-size: calc(36px + 1vw);
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+#historico .histo-top .lines {
+  height: 7px;
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0;
+}
+#historico .histo-top .lines .line1 {
+  height: 7px;
+  width: 60px;
+  background-color: #FFFFFF;
+}
+#historico .histo-top .lines .line2 {
+  height: 7px;
+  width: 60px;
+  background-color: #A9ABAE;
+}
+#historico .histo-top h2 {
+  width: fit-content;
+  font-weight: 600;
+  font-size: calc(22px + 0.5vw);
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  padding-bottom: 52px;
+  color: #FFFFFF;
+}
+#historico .sobre-hcmaq {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 76px;
+  padding-left: 11.32vw;
+  padding-right: 6.94vw;
+  padding-bottom: 191px;
+}
+#historico .sobre-hcmaq .img-wrapper {
+  height: 750px;
+  width: 52vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#historico .sobre-hcmaq .text-wrapper {
+  width: 46.6vw;
+  padding-left: 36px;
+}
+#historico .sobre-hcmaq .text-wrapper h2 {
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #006599;
+}
+#historico .sobre-hcmaq .text-wrapper .lines {
+  height: 7px;
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0;
+}
+#historico .sobre-hcmaq .text-wrapper .lines .line1 {
+  height: 7px;
+  width: 60px;
+  background-color: #00235A;
+}
+#historico .sobre-hcmaq .text-wrapper .lines .line2 {
+  height: 7px;
+  width: 60px;
+  background-color: #006599;
+}
+#historico .sobre-hcmaq .text-wrapper p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #006599;
+}
+#historico .missao {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 91px 6.94vw 59px 11.32vw;
+}
+#historico .missao div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#historico .missao div h3 {
+  font-weight: 900;
+  font-size: calc(36px + 1vw);
+  line-height: calc(38px + 1vw);
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+#historico .missao div .lines {
+  height: 7px;
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0;
+}
+#historico .missao div .lines .line1 {
+  height: 7px;
+  width: 60px;
+  background-color: #FFFFFF;
+}
+#historico .missao div .lines .line2 {
+  height: 7px;
+  width: 60px;
+  background-color: #A9ABAE;
+}
+#historico .missao div p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  padding-right: 80px;
+  color: #FFFFFF;
+}
+
 #footer .footer-top {
   background-color: #00527C;
   padding: 110px 4vw 65px 11.31vw;
