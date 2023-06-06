@@ -50,6 +50,28 @@ table {
     font-family: 'Fira Sans' !important;
 }
 
+// Definir variável para a cor principal
+$cor-overflow: #006599;
+
+// Estilizar a barra de overflow
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $cor-overflow;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: darken($cor-overflow, 10%);
+}
+
+// Adicionar scroll suave globalmente
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
 
 // Variaveis de cor

@@ -56,7 +56,7 @@
                 <li <?php if (is_page('historico')) {
                         echo 'class="active-header"';
                     } else {
-                    } ?>><a href="<?php echo get_home_url() ?>#historico">Histórico</a></li>
+                    } ?>><a href="<?php echo get_home_url() ?>/historico">Histórico</a></li>
                 <li <?php if (is_page('produtos')) {
                         echo 'class="active-header"';
                     } else {
@@ -87,7 +87,7 @@
                     <li onclick="closeMenu()" <?php if (is_page('historico')) {
                             echo 'class="active-header"';
                         } else {
-                        } ?>><a href="<?php echo get_home_url() ?>#historico">Histórico</a></li>
+                        } ?>><a href="<?php echo get_home_url() ?>/historico">Histórico</a></li>
                     <li onclick="closeMenu()" <?php if (is_page('produtos')) {
                             echo 'class="active-header"';
                         } else {
