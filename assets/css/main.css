@@ -1365,6 +1365,13 @@ html {
   padding-right: 6.94vw;
   padding-bottom: 191px;
 }
+@media screen and (max-width: 600px) {
+  #historico .sobre-hcmaq {
+    flex-direction: column;
+    padding: 0;
+    padding-top: 60px;
+  }
+}
 #historico .sobre-hcmaq .img-wrapper {
   height: 750px;
   width: 52vw;
@@ -1372,9 +1379,23 @@ html {
   background-repeat: no-repeat;
   background-position: center center;
 }
+@media screen and (max-width: 600px) {
+  #historico .sobre-hcmaq .img-wrapper {
+    height: 300px;
+    width: 90vw;
+    margin: 0 auto;
+  }
+}
 #historico .sobre-hcmaq .text-wrapper {
   width: 46.6vw;
   padding-left: 36px;
+}
+@media screen and (max-width: 600px) {
+  #historico .sobre-hcmaq .text-wrapper {
+    width: 90vw;
+    padding: 30px 0 80px 0;
+    margin: 0 auto;
+  }
 }
 #historico .sobre-hcmaq .text-wrapper h2 {
   font-size: 26px;
@@ -1415,6 +1436,12 @@ html {
   justify-content: space-between;
   align-items: flex-start;
   padding: 91px 6.94vw 59px 11.32vw;
+}
+@media screen and (max-width: 600px) {
+  #historico .missao {
+    padding: 60px 0 60px 30px;
+    flex-direction: column;
+  }
 }
 #historico .missao div {
   display: flex;
