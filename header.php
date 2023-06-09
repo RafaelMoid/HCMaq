@@ -72,7 +72,7 @@
                 <li <?php if (is_page('contato')) {
                         echo 'class="active-header"';
                     } else {
-                    } ?>><a href="">Contato</a></li>
+                    } ?>><a href="<?php echo get_home_url() ?>/contato">Contato</a></li>
             </ul>
 
         </nav>
@@ -103,7 +103,7 @@
                     <li onclick="closeMenu()" <?php if (is_page('contato')) {
                             echo 'class="active-header"';
                         } else {
-                        } ?>><a href="">Contato</a></li>
+                        } ?>><a href="<?php echo get_home_url() ?>/contato">Contato</a></li>
                 </ul>
             </nav>
         </div>

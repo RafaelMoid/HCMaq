@@ -1453,6 +1453,192 @@ html {
   color: #FFFFFF;
 }
 
+#contato {
+  display: flex;
+  flex-direction: column;
+}
+#contato .head {
+  height: 180px;
+  background-color: #006599;
+}
+#contato .head h1 {
+  font-weight: 800;
+  font-size: 64px;
+  color: #FFFFFF;
+  padding: 90px 0 0 11.32vw;
+}
+@media screen and (max-width: 600px) {
+  #contato .head {
+    height: 60px;
+    width: 100vw;
+  }
+  #contato .head h1 {
+    font-size: 26px;
+    padding: 25px 0 0 20px;
+  }
+}
+#contato .content-fl {
+  display: flex;
+  flex-direction: row;
+  padding-top: 71px;
+}
+@media screen and (max-width: 600px) {
+  #contato .content-fl {
+    flex-direction: column;
+  }
+}
+#contato .content-fl h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #00235A;
+  margin-bottom: 10px;
+}
+#contato .content-fl .form-wrapper {
+  width: 50vw;
+  padding-left: 11.32vw;
+}
+@media screen and (max-width: 600px) {
+  #contato .content-fl .form-wrapper {
+    width: 90vw;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+}
+#contato .content-fl .form-wrapper p input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #006599;
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  border-radius: 10px;
+  border: none;
+  width: 120px;
+  height: 40px;
+}
+#contato .content-fl .form-wrapper p span input {
+  background: #D9D9D9;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  border: 0;
+  margin: 10px 0;
+  width: 34vw;
+  height: 60px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #00235A;
+  font-family: "Fira Sans Condensed";
+  font-style: normal;
+}
+@media screen and (max-width: 600px) {
+  #contato .content-fl .form-wrapper p span input {
+    width: 90vw;
+  }
+}
+#contato .content-fl .form-wrapper p span input::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  color: #00235A;
+  padding-left: 8px;
+}
+#contato .content-fl .form-wrapper p span textarea {
+  margin: 6px 0;
+  background: #D9D9D9;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  height: 40px;
+  border: 0;
+  width: 34vw;
+  height: 400px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-family: "Fira Sans Condensed";
+}
+@media screen and (max-width: 600px) {
+  #contato .content-fl .form-wrapper p span textarea {
+    width: 90vw;
+    margin-top: 20px;
+  }
+}
+#contato .content-fl .form-wrapper p span textarea::placeholder {
+  padding: 8px 0 0 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #00235A;
+}
+#contato .content-fl .contact-wrapper {
+  width: 50vw;
+}
+@media screen and (max-width: 600px) {
+  #contato .content-fl .contact-wrapper {
+    width: 90vw;
+    margin: 60px auto 0 auto;
+  }
+}
+#contato .content-fl .contact-wrapper h4 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #00235A;
+}
+#contato .content-fl .contact-wrapper p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #00235A;
+  padding-bottom: 30px;
+}
+#contato .content-fl .contact-wrapper a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  height: 80px;
+  background: #006599;
+  border-radius: 10px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+}
+#contato .content-fl .contact-wrapper a img {
+  max-height: 60px;
+  height: 60px;
+  margin-right: 12px;
+}
+@media screen and (max-width: 600px) {
+  #contato .content-fl .contact-wrapper a {
+    width: 70vw;
+    height: 60px;
+    font-size: 18px;
+  }
+  #contato .content-fl .contact-wrapper a img {
+    max-width: 30px;
+    height: 30px;
+    width: 30px;
+  }
+}
+#contato .map-wrapper {
+  width: 100%;
+  padding-top: 189px;
+}
+@media screen and (max-width: 600px) {
+  #contato .map-wrapper {
+    padding-top: 60px;
+  }
+}
+#contato .map-wrapper iframe {
+  width: 100%;
+}
+
 #footer .footer-top {
   background-color: #00527C;
   padding: 110px 4vw 65px 11.31vw;
