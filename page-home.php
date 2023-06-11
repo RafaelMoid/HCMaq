@@ -50,7 +50,7 @@
           com uma linha completa
           de Guindautos e Acessórios.</p>
         <!-- Adicionar aqui o Link para o sobre? -->
-        <a href="">Saiba mais</a>
+        <a href="<?php echo get_home_url() ?>/historico">Saiba mais</a>
         <!-- Adicionar aqui o Link para o sobre? -->
       </div>
       <div style="position: absolute; top: -90px; z-index: -100;" id="historico"></div>
@@ -74,7 +74,7 @@
         <div class="swiper-slide swiper-produtos-carrossel">
           <?php
           $args = array(
-            'post_type'      => 'produto',
+            'post_type'      => 'produtos_destaque',
             'posts_per_page' => 3
           );
 
@@ -111,7 +111,7 @@
   <!-- Divisão fale conosco -->
   <div class="fale-conosco-div">
     <h3>Fale conosco a qualquer momento</h3>
-    <a href="">Clique Aqui</a>
+    <a href="<?php echo get_home_url() ?>/contato">Clique Aqui</a>
   </div>
   <!-- Divisão fale conosco -->
   <!-- Seção de diferenciais -->
@@ -131,7 +131,7 @@
             <h3><?php echo get_sub_field('subtitulo'); ?></h3>
             <div class="linha-dif"></div>
             <p><?php echo get_sub_field('resumo'); ?></p>
-            <a href="">Saiba mais</a>
+            <a href="<?php echo get_home_url() ?>/historico">Saiba mais</a>
           </div>
         </div>
 

@@ -60,18 +60,7 @@
                 <div class="line1"></div>
                 <div class="line2"></div>
             </div>
-            <p>Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed
-                do
-                eiusmod tempor incididunt
-                ut labore et dolore magna aliqua.
-                </br>
-                </br>
-
-                Quis ipsum suspendisse ultrices
-                gravida. Risus commodo viverra
-                maecenas accumsan lacus vel
-                facilisis. </p>
+            <p>atender os seus clientes com qualidade, rapidez e eficiência, apresentando o que há de melhor em produtos e serviços relacionados a guindauto e acessórios. Para cumprir essa missão, a empresa se dedica a oferecer soluções personalizadas e inovadoras, que atendam às necessidades específicas de cada cliente.</p>
         </div>
         <div>
             <h3>Visão</h3>
@@ -79,18 +68,7 @@
                 <div class="line1"></div>
                 <div class="line2"></div>
             </div>
-            <p>Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed
-                do
-                eiusmod tempor incididunt
-                ut labore et dolore magna aliqua.
-                </br>
-                </br>
-
-                Quis ipsum suspendisse ultrices
-                gravida. Risus commodo viverra
-                maecenas accumsan lacus vel
-                facilisis. </p>
+            <p>ser referência no segmento em que atua, consolidando-se como líder de mercado e ampliando sua linha de produtos e serviços. Para alcançar esse objetivo, a empresa investe continuamente em tecnologia e capacitação de sua equipe, buscando sempre oferecer as soluções mais modernas e eficientes para seus clientes.</p>
         </div>
         <div>
             <h3>Valores</h3>
@@ -98,18 +76,9 @@
                 <div class="line1"></div>
                 <div class="line2"></div>
             </div>
-            <p>Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed
-                do
-                eiusmod tempor incididunt
-                ut labore et dolore magna aliqua.
-                </br>
-                </br>
-
-                Quis ipsum suspendisse ultrices
-                gravida. Risus commodo viverra
-                maecenas accumsan lacus vel
-                facilisis. </p>
+            <p>
+            transparência, agilidade, credibilidade e qualidade em tudo o que faz e vende. A empresa acredita que esses valores são essenciais para estabelecer uma relação de confiança e respeito com seus clientes, colaboradores e parceiros de negócio.
+            </p>
         </div>
     </section>
 </main>

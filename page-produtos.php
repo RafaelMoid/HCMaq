@@ -82,7 +82,7 @@
     <!-- Grid com Acessorios para Guindauto -->
     <section class="acessorios-guindauto">
         <h5>Conheça nossas opções</h5>
-        <h3>Guindautos Semi-Novos</h3>
+        <h3>Acessórios para Guindautos</h3>
         <div class="lines">
             <div class="line1"></div>
             <div class="line2"></div>
@@ -122,7 +122,7 @@
     <!-- Grid com Acessorios para diversos -->
     <section class="acessorios-guindauto">
         <h5>Conheça nossas opções</h5>
-        <h3>Guindautos Semi-Novos</h3>
+        <h3>Acessórios Diversos</h3>
         <div class="lines">
             <div class="line1"></div>
             <div class="line2"></div>

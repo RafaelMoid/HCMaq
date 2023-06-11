@@ -1666,6 +1666,125 @@ html {
   width: 100%;
 }
 
+#single .header-single {
+  height: 200px;
+  width: 100%;
+  background-color: #006599;
+  display: flex;
+  flex-direction: column-reverse;
+}
+#single .header-single h1 {
+  padding-bottom: 30px;
+  padding-left: 11.32vw;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 77px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+#single #post-style {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 11.32vw;
+}
+#single #post-style .left-content-post img {
+  width: 100%;
+  max-height: 300px;
+}
+#single #post-style .right-content-post {
+  padding-top: 45px;
+}
+#single #post-style .right-content-post p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  color: #006599;
+}
+#single .conteudo-single {
+  display: flex;
+  flex-direction: row;
+  padding-top: 70px;
+  padding-bottom: 200px;
+  width: 100%;
+}
+#single .conteudo-single .left-single {
+  width: 45vw;
+  padding-left: 11.32vw;
+  padding-right: 27px;
+}
+#single .conteudo-single .left-single img {
+  width: 100%;
+}
+#single .conteudo-single .right-single {
+  width: 55vw;
+  padding-right: 11.31vw;
+}
+#single .conteudo-single .right-single h2 {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.05em;
+  color: #006599;
+  padding-bottom: 30px;
+}
+#single .conteudo-single .right-single #desc-prod {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #00235A;
+  padding-bottom: 42px;
+}
+#single .conteudo-single .right-single ul {
+  display: flex;
+  flex-direction: column;
+  list-style: disc;
+  padding-left: 27px;
+}
+#single .conteudo-single .right-single ul li {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #00235A;
+}
+#single .conteudo-single .right-single a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  height: 80px;
+  background: #006599;
+  border-radius: 10px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  margin-top: 100px;
+}
+#single .conteudo-single .right-single a img {
+  max-height: 60px;
+  height: 60px;
+  margin-right: 12px;
+}
+@media screen and (max-width: 600px) {
+  #single .conteudo-single .right-single a {
+    width: 70vw;
+    height: 60px;
+    font-size: 18px;
+  }
+  #single .conteudo-single .right-single a img {
+    max-width: 30px;
+    height: 30px;
+    width: 30px;
+  }
+}
+
 #footer .footer-top {
   background-color: #00527C;
   padding: 110px 4vw 65px 11.31vw;

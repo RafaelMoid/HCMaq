@@ -18,8 +18,8 @@
           </div>
           <div class="icon-text">
             <h4>Endereço</h4>
-            <a href="https://goo.gl/maps/dxPYVfdSTBCzbjzo8?coh=178572&entry=tt" target="_blank">3rd Floor, State House</br>
-              North City At. South 3000</a>
+            <a href="https://goo.gl/maps/2DJUurHwiUaumbTJ7" target="_blank">Avenida Rio Capibaribe</br>
+                Lot Integração de Muribeca, 29 Marcos Freire, Recife - PE</a>
           </div>
         </div>
         <div class="icon-wrapper">
@@ -28,7 +28,7 @@
           </div>
           <div class="icon-text">
             <h4>Contato</h4>
-            <a href="tel:+5500999999999">+55 00 99999 9999</a>
+            <a href="tel:+5581991319496">(81) 99131 9496</a>
             <a href="mailto:User0123@example.com">User0123@example.com</a>
           </div>
         </div>
