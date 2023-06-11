@@ -158,6 +158,10 @@
                 line-height: calc(38px + 1vw);
                 letter-spacing: 0.05em;
                 color: #FFFFFF;
+
+                @include mobile {
+                    padding-top: 36px;
+                }
             }
 
             .lines {
