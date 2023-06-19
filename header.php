@@ -64,7 +64,7 @@
                 <li <?php if (is_page('parceiros')) {
                         echo 'class="active-header"';
                     } else {
-                    } ?>><a href="<?php echo get_home_url() ?>#parceiros">Parceiros</a></li>
+                    } ?>><a href="<?php echo get_home_url() ?>/parceiros">Parceiros</a></li>
                 <li <?php if (is_page('blog')) {
                         echo 'class="active-header"';
                     } else {
@@ -95,7 +95,7 @@
                     <li onclick="closeMenu()" <?php if (is_page('parceiros')) {
                             echo 'class="active-header"';
                         } else {
-                        } ?>><a href="<?php echo get_home_url() ?>#parceiros">Parceiros</a></li>
+                        } ?>><a href="<?php echo get_home_url() ?>/parceiros">Parceiros</a></li>
                     <li onclick="closeMenu()" <?php if (is_page('blog')) {
                             echo 'class="active-header"';
                         } else {

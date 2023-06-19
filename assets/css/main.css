@@ -1823,6 +1823,64 @@ html {
   }
 }
 
+#parceiros {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#parceiros .intro-parceiros h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 84px;
+  /* identical to box height */
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+#parceiros .intro-parceiros .boxes-parceiros {
+  display: flex;
+  flex-direction: row;
+}
+#parceiros .intro-parceiros .boxes-parceiros .box1 {
+  height: 7px;
+  width: 60px;
+  background: #FFFFFF;
+}
+#parceiros .intro-parceiros .boxes-parceiros .box2 {
+  height: 7px;
+  width: 60px;
+  background: #A9ABAE;
+}
+#parceiros .intro-parceiros p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+#parceiros .parceiro {
+  display: flex;
+  flex-direction: row;
+  padding-left: 11.32vw;
+  margin-bottom: 56px;
+}
+#parceiros .parceiro:first-child {
+  padding-top: 70px;
+}
+#parceiros .parceiro .left-parceiro {
+  width: 35.9vw;
+}
+#parceiros .parceiro .left-parceiro img {
+  width: 100%;
+  padding-right: 40px;
+}
+#parceiros .parceiro .right-parceiro {
+  width: 45.34vw;
+  padding-left: 40px;
+  margin-right: 4.65vw;
+}
+
 #footer .footer-top {
   background-color: #00527C;
   padding: 110px 4vw 65px 11.31vw;
