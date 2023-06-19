@@ -36,7 +36,7 @@
   <section class="second-content">
     <div class="blue-box-wrapper">
       <div class="second-image-wrapper">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Rectangle.png" alt="">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/AV1.png" alt="">
       </div>
       <div>
         <h4>Especialista em Guindautos</h4>
@@ -170,7 +170,7 @@
       <div></div>
     </div>
     <div class="display-depo">
-      <div class="depo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Logo-HC.png');">
+      <div class="depo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/AV2.png');">
         <div class="texto-depo">
           <div class="little-boxes">
             <div></div>
@@ -185,7 +185,7 @@
           <p class="role">Owner / President</p>
         </div>
       </div>
-      <div class="depo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Logo-HC.png');">
+      <div class="depo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/AV03.png');">
         <div class="texto-depo">
           <div class="little-boxes">
             <div></div>
@@ -200,7 +200,7 @@
           <p class="role">Architect</p>
         </div>
       </div>
-      <div class="depo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Logo-HC.png');">
+      <div class="depo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/AV04.png');">
         <div class="texto-depo">
           <div class="little-boxes">
             <div></div>
@@ -215,7 +215,7 @@
           <p class="role">Executive Director</p>
         </div>
       </div>
-      <div class="depo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Logo-HC.png');">
+      <div class="depo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/images/AV05.png');">
         <div class="texto-depo">
           <div class="little-boxes">
             <div></div>

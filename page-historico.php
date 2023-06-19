@@ -17,7 +17,7 @@
             para trazer o melhor ao seu projeto ou serviço.</h2>
     </section>
     <section class="sobre-hcmaq">
-        <div class="img-wrapper" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Historico.png);"></div>
+        <div class="img-wrapper" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/hugo.png);"></div>
         <div class="text-wrapper">
             <h2>Sobre a HCMAQ</h2>
             <div class="lines">

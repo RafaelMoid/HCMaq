@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 <main id="parceiros">
-    <div class="intro-parceiros">
+    <div class="intro-parceiros" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Parceiros1.png);">
         <h1>Representações</h1>
         <div class="boxes-parceiros">
             <div class="box1"></div>
@@ -35,6 +35,10 @@
                 </div>
                 <div class="right-parceiro">
                     <img src="<?php echo get_sub_field('logo_parceiro'); ?>" alt="">
+                    <div class="boxes-parceiros">
+                        <div class="box1"></div>
+                        <div class="box2"></div>
+                    </div>
                     <p><?php echo get_sub_field('texto_parceiro'); ?></p>
                 </div>
             </div>

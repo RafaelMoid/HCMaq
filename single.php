@@ -10,7 +10,13 @@
       if (get_post_type() === 'post') {
   ?>
         <div class="header-single">
+          <div class="blue-box"></div>
           <h1><?php the_title(); ?></h1>
+          <div class="post-boxes">
+            <div class="box1"></div>
+            <div class="box2"></div>
+          </div>
+          <p>Recife, PE - <?php echo get_the_date(); ?></p>
         </div>
         <div id="post-style">
           <div class="left-content-post">
@@ -56,7 +62,7 @@
     }
   }
   ?>
-
+  <div class="line-bottom"></div>
 </main>
 
 <?php get_footer(); ?>
