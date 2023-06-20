@@ -1661,6 +1661,7 @@ html {
 #contato .map-wrapper {
   width: 100%;
   padding-top: 189px;
+  height: 800px;
 }
 @media screen and (max-width: 600px) {
   #contato .map-wrapper {
@@ -1669,6 +1670,7 @@ html {
 }
 #contato .map-wrapper iframe {
   width: 100%;
+  height: 100%;
 }
 
 #single .header-single {

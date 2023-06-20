@@ -43,7 +43,7 @@
           <div class="right-single">
             <h2>Descrição:</h2>
             <p id="desc-prod"><?php echo get_field('descricao_detalhada_produto') ?></p>
-            <h2>Características:</h2>
+            <!-- <h2>Características:</h2>
             <?php if (have_rows('lista_de_caracteristicas')) : ?>
               <ul class="slides">
                 <?php while (have_rows('lista_de_caracteristicas')) : the_row();
@@ -53,7 +53,7 @@
                   </li>
                 <?php endwhile; ?>
               </ul>
-            <?php endif; ?>
+            <?php endif; ?> -->
             <a href="https://api.whatsapp.com/send?phone=5581991319496"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/WhatsappBranco.png" alt="">Fale com um dos nossos Colaboradores</a>
           </div>
         </section>
