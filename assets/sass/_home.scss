@@ -72,14 +72,19 @@
             margin: auto;
             padding: 53px 820px 0 0 !important;
 
-            @include mobile {
-                display: none !important;
-            }
-
             @include tablet {
                 padding-top: 83px !important;
                 width: 250px;
             }
+            
+            @include mobile {
+                display: none !important;
+            }
+
+            @include mobile-deitado {
+                display: none !important;
+            }
+
 
 
             img {
@@ -92,7 +97,7 @@
         }
 
         .blue-box-wrapper {
-            border: 5px solid #006599;
+            border: 5px solid $main-blue;
 
             div {
                 display: flex;
@@ -109,7 +114,7 @@
                     font-weight: 400;
                     font-size: 28px;
                     line-height: 34px;
-                    color: #606062;
+                    color: $gray-text;
                 }
 
                 h3 {
@@ -353,7 +358,7 @@
             font-weight: 400;
             font-size: 24px;
             line-height: 28px;
-            color: #006599;
+            color: $main-blue;
             padding: 12px 22px;
             background-color: white;
 
@@ -411,7 +416,7 @@
                 font-weight: 800;
                 font-size: 28px;
                 line-height: 34px;
-                color: #006599;
+                color: $main-blue;
 
                 @include mobile {
                     font-size: 22px;
@@ -430,7 +435,7 @@
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 17px;
-                color: #606062;
+                color: $gray-text;
                 margin-bottom: 30px;
             }
 
@@ -587,7 +592,7 @@
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 17px;
-                    color: #606062;
+                    color: $gray-text;
                 }
 
                 .texto-depo {
@@ -691,7 +696,7 @@
                 .nome-depo {
                     margin-top: auto;
                     height: fit-content;
-                    background-color: #006599;
+                    background-color: $main-blue;
                     padding: 13px 0 13px 30px;
 
                     span {
@@ -800,7 +805,7 @@
                     font-size: 20px;
                     line-height: 24px;
                     margin-bottom: 20px;
-                    color: #606062;
+                    color: $gray-text;
                     padding-bottom: 20px;
                     
                     @include mobile {
@@ -842,7 +847,7 @@
                         color: #FFFFFF;
                         width: 54px;
                         height: 24px;
-                        background-color: #006599;
+                        background-color: $main-blue;
                     }
                 }
 

@@ -1,17 +1,85 @@
 // CSS Reset
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -19,35 +87,54 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
     list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
     quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
 // Import da font
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-    font-family: 'Fira Sans' !important;
+    font-family: 'Fira Sans Condensed' !important;
 }
 
 // Definir variável para a cor principal
@@ -55,22 +142,22 @@ $cor-overflow: #006599;
 
 // Estilizar a barra de overflow
 ::-webkit-scrollbar {
-  width: 10px;
-  background-color: transparent;
+    width: 10px;
+    background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: $cor-overflow;
+    background-color: $cor-overflow;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: darken($cor-overflow, 10%);
+    background-color: darken($cor-overflow, 10%);
 }
 
 // Adicionar scroll suave globalmente
 html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 
@@ -81,10 +168,107 @@ $gray-transparent: rgba(255, 255, 255, 0.8);
 $gray-text: #606062;
 $gray-light: #D9D9D9;
 
+//Variaveis de Fonte
+@mixin font12light {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+@mixin font14med {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    text-align: left;
+}
+
+@mixin font15med {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+@mixin font16light {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+@mixin font16med {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+@mixin font16bold {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+@mixin font18bold {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+@mixin font20med {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+@mixin font20bold {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+@mixin font24med {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+@mixin font24bold {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+@mixin font36bold {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
 // Variaveis de sombra
-@mixin drop-shadow{
+@mixin drop-shadow {
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-} 
+}
 
 @mixin container-full {
     max-width: 100vw;
@@ -96,7 +280,7 @@ $gray-light: #D9D9D9;
     width: 100%;
 }
 
-@mixin display ( $display, $direction, $justify, $align) {
+@mixin display ($display, $direction, $justify, $align) {
     display: $display;
     flex-direction: $direction;
     justify-content: $justify;
@@ -110,7 +294,13 @@ $gray-light: #D9D9D9;
 }
 
 @mixin mobile {
-    @media screen and (max-width: 600px) and (orientation: landscape) {
+    @media screen and (max-width: 600px) {
+        @content;
+    }
+}
+
+@mixin mobile-deitado {
+    @media screen and (max-width: 1000px) {
         @content;
     }
 }

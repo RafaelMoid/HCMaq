@@ -2,13 +2,12 @@
   <div class="footer-top">
     <div class="left">
       <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Marca Web Cabeçalho 1.png" alt="">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-        </br>
-        </br>
-        Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-        maecenas accumsan lacus vel facilisis. </p>
+      <p>A HCMAQ é uma empresa que tem como missão atender os seus clientes com qualidade, rapidez
+        e eficiência, apresentando o que há de melhor em produtos e serviços relacionados a guindauto
+        e acessórios.
+        </br></br>
+        Para cumprir essa missão, a empresa se dedica a oferecer soluções personalizadas
+        e inovadoras, que atendam às necessidades específicas de cada cliente. </p>
     </div>
     <div class="middle">
       <div class="footer-icons">
@@ -19,7 +18,7 @@
           <div class="icon-text">
             <h4>Endereço</h4>
             <a href="https://goo.gl/maps/2DJUurHwiUaumbTJ7" target="_blank">Avenida Rio Capibaribe</br>
-                Lot Integração de Muribeca, 29 Marcos Freire, Recife - PE</a>
+              Lot Integração de Muribeca, 29 Marcos Freire, Recife - PE</a>
           </div>
         </div>
         <div class="icon-wrapper">
@@ -37,33 +36,33 @@
     <div class="right">
       <h4>Postagens Recentes</h4>
       <div class="footer-blog-posts">
-      <?php
-      $args = array(
-        'post_type' => 'post', // Defina o tipo de postagem que você deseja recuperar
-        'posts_per_page' => 2 // -1 para obter todos os posts ou defina um número específico
-      );
+        <?php
+        $args = array(
+          'post_type' => 'post', // Defina o tipo de postagem que você deseja recuperar
+          'posts_per_page' => 2 // -1 para obter todos os posts ou defina um número específico
+        );
 
-      $posts_query = new WP_Query($args);
+        $posts_query = new WP_Query($args);
 
-      if ($posts_query->have_posts()) {
-        while ($posts_query->have_posts()) {
-          $posts_query->the_post();
-      ?>
-          <a href="<?php echo get_post_permalink() ?>">
-            <div class="img-wrapper" style="background-image: url('<?php echo get_field('imagem_do_post'); ?>')"></div>
-            <p class="resumo-post"><?php echo get_field('resumo_footer'); ?></p>
-          </a>
-      <?php
+        if ($posts_query->have_posts()) {
+          while ($posts_query->have_posts()) {
+            $posts_query->the_post();
+        ?>
+            <a href="<?php echo get_post_permalink() ?>">
+              <div class="img-wrapper" style="background-image: url('<?php echo get_field('imagem_do_post'); ?>')"></div>
+              <p class="resumo-post"><?php echo get_field('resumo_footer'); ?></p>
+            </a>
+        <?php
+          }
+        } else {
+          echo 'Nenhum post encontrado.';
         }
-      } else {
-        echo 'Nenhum post encontrado.';
-      }
 
-      wp_reset_postdata();
-      ?>
+        wp_reset_postdata();
+        ?>
 
 
-    </div>
+      </div>
     </div>
   </div>
   <div class="footer-bottom">

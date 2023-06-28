@@ -98,7 +98,7 @@
                 font-size: 26px;
                 line-height: 30px;
                 letter-spacing: 0.05em;
-                color: #006599;
+                color: $main-blue;
             }
 
             .lines {
@@ -117,7 +117,7 @@
                 .line2 {
                     height: 7px;
                     width: 60px;
-                    background-color: #006599;
+                    background-color: $main-blue;
                 }
             }
 
@@ -127,7 +127,7 @@
                 line-height: 24px;
                 letter-spacing: 0.05em;
 
-                color: #006599;
+                color: $main-blue;
             }
         }
     }
@@ -192,5 +192,59 @@
                 color: #FFFFFF;
             }
         }
+    }
+
+    .diferencial {
+        padding: 91px 6.94vw 59px 11.32vw;
+
+        @include mobile{
+            padding: 60px 0 60px 30px;
+            flex-direction: column ;
+        }
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            h3 {
+                font-weight: 900;
+                font-size: calc(36px + 1vw);
+                line-height: calc(38px + 1vw);
+                letter-spacing: 0.05em;
+                color: $main-blue;
+
+                @include mobile {
+                    padding-top: 36px;
+                }
+            }
+
+            .lines {
+                height: 7px;
+                width: 120px;
+                display: flex;
+                flex-direction: row;
+                margin: 15px 0;
+
+                .line1 {
+                    height: 7px;
+                    width: 60px;
+                    background-color:#00235A;
+                    ;
+                }
+
+                .line2 {
+                    height: 7px;
+                    width: 60px;
+                    background-color: $main-blue;
+                }
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                padding-right: 80px;
+                color: $main-blue;
+            }
     }
 }
