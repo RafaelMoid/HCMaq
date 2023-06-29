@@ -839,10 +839,18 @@ html {
   padding: 35px 5vw 68px 11.31vw;
   background-color: #00527C;
 }
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+  #main-home .partners {
+    padding: 28px 5.9vw;
+  }
+}
 #main-home .partners h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
   font-weight: 800;
-  font-size: 36px;
-  line-height: 43px;
   color: #FFFFFF;
 }
 #main-home .partners .swiper {
@@ -876,6 +884,11 @@ html {
     margin: 12px 0;
   }
 }
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+  #main-home .partners .swiper .swiper-wrapper .swiper-slide div img {
+    max-width: 10vw;
+  }
+}
 #main-home .depoimentos {
   padding: 75px 5vw 68px 11.31vw;
   display: flex;
@@ -888,9 +901,11 @@ html {
 }
 #main-home .depoimentos h4 {
   font-style: normal;
+  font-size: 16px;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
   color: #020B4E;
   text-transform: uppercase;
 }
@@ -902,9 +917,11 @@ html {
 #main-home .depoimentos h3 {
   margin-top: 8px;
   font-style: normal;
+  font-size: 24px;
   font-weight: 600;
-  font-size: 38px;
-  line-height: 46px;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
   color: #00527C;
 }
 @media screen and (max-width: 600px) {
@@ -962,6 +979,12 @@ html {
     margin-bottom: 16px;
   }
 }
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+  #main-home .depoimentos .display-depo .depo {
+    max-width: 18.7vw;
+    height: 232px;
+  }
+}
 #main-home .depoimentos .display-depo .depo p {
   display: flex;
   font-style: normal;
@@ -986,6 +1009,11 @@ html {
   padding: 30px;
   font-size: 20px;
   display: none;
+}
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+  #main-home .depoimentos .display-depo .depo .texto-depo p {
+    padding: 8px;
+  }
 }
 #main-home .depoimentos .display-depo .depo .texto-depo .little-boxes {
   margin-right: 10px;
@@ -1057,18 +1085,22 @@ html {
 }
 #main-home .depoimentos .display-depo .depo .nome-depo span {
   font-style: normal;
+  font-size: 18px;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
   color: #FFFFFF;
 }
 #main-home .depoimentos .display-depo .depo .nome-depo p {
   display: flex;
   margin-top: 4px;
   font-style: normal;
+  font-size: 14px;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-align: left;
   color: #FFFFFF;
 }
 #main-home .blog {
@@ -1078,18 +1110,22 @@ html {
 }
 #main-home .blog h4 {
   font-style: normal;
+  font-size: 16px;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
   color: #020B4E;
   text-transform: uppercase;
 }
 #main-home .blog h3 {
   margin-top: 8px;
   font-style: normal;
+  font-size: 24px;
   font-weight: 600;
-  font-size: 38px;
-  line-height: 46px;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
   color: #00527C;
 }
 #main-home .blog .line-depo {
@@ -1136,10 +1172,18 @@ html {
     padding: 30px 0;
   }
 }
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+  #main-home .blog .display-blog-posts div {
+    width: 30vw;
+    height: 30vw;
+  }
+}
 #main-home .blog .display-blog-posts div .post-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
   padding: 37px 0 0 67px;
   color: #00527C;
   margin-bottom: 26px;
@@ -1151,9 +1195,11 @@ html {
   }
 }
 #main-home .blog .display-blog-posts div .resumo-post {
+  font-size: 18px;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
   margin-bottom: 20px;
   color: #606062;
   padding-bottom: 20px;
@@ -1201,9 +1247,11 @@ html {
 #main-home .blog .display-blog-posts div a {
   border: 2px solid #00527C;
   padding: 14px 23px;
-  font-weight: 400;
   font-size: 18px;
+  font-weight: 400;
   line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
   color: #00235A;
   text-decoration: none;
 }

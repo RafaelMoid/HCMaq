@@ -534,10 +534,13 @@
         padding: 35px 5vw 68px 11.31vw;
         background-color: $dark-blue;
 
+        @include mobile-deitado{
+            padding: 28px 5.9vw;
+        }
+
         h2 {
+            @include font20bold;
             font-weight: 800;
-            font-size: 36px;
-            line-height: 43px;
             color: #FFFFFF;
         }
 
@@ -570,6 +573,10 @@
                                 max-width: 100px;
                                 margin: 12px 0;
                             }
+
+                            @include mobile-deitado{
+                                max-width: 10vw;
+                            }
                         }
                     }
                 }
@@ -589,9 +596,7 @@
 
         h4 {
             font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 29px;
+            @include font16med;
             color: #020B4E;
             text-transform: uppercase;
 
@@ -603,9 +608,7 @@
         h3 {
             margin-top: 8px;
             font-style: normal;
-            font-weight: 600;
-            font-size: 38px;
-            line-height: 46px;
+            @include font24bold;
             color: #00527C;
 
             @include mobile {
@@ -664,6 +667,11 @@
                     margin-bottom: 16px;
                 }
 
+                @include mobile-deitado {
+                    max-width: 18.7vw;
+                    height: 232px;
+                }
+
                 p {
                     display: flex;
                     font-style: normal;
@@ -689,6 +697,10 @@
                         padding: 30px;
                         font-size: 20px;
                         display: none;
+
+                        @include mobile-deitado{
+                            padding: 8px;
+                        }
                     }
 
                     .little-boxes {
@@ -779,9 +791,7 @@
 
                     span {
                         font-style: normal;
-                        font-weight: 400;
-                        font-size: 24px;
-                        line-height: 29px;
+                        @include font18med;
                         color: #FFFFFF;
                     }
 
@@ -789,9 +799,7 @@
                         display: flex;
                         margin-top: 4px;
                         font-style: normal;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 19px;
+                        @include font14med;
                         color: #FFFFFF;
                     }
                 }
@@ -806,9 +814,7 @@
 
         h4 {
             font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 29px;
+            @include font16med;
             color: #020B4E;
             text-transform: uppercase;
         }
@@ -816,9 +822,7 @@
         h3 {
             margin-top: 8px;
             font-style: normal;
-            font-weight: 600;
-            font-size: 38px;
-            line-height: 46px;
+            @include font24bold;
             color: #00527C;
         }
 
@@ -868,10 +872,13 @@
                     padding: 30px 0;
                 }
 
+                @include mobile-deitado {
+                    width: 30vw;
+                    height: 30vw;
+                }
+
                 .post-title {
-                    font-weight: 700;
-                    font-size: 24px;
-                    line-height: 29px;
+                    @include font20bold;
                     padding: 37px 0 0 67px;
                     color: #00527C;
                     margin-bottom: 26px;
@@ -883,9 +890,7 @@
                 }
 
                 .resumo-post {
-                    font-weight: 400;
-                    font-size: 20px;
-                    line-height: 24px;
+                    @include font18med;
                     margin-bottom: 20px;
                     color: $gray-text;
                     padding-bottom: 20px;
@@ -936,9 +941,7 @@
                 a {
                     border: 2px solid #00527C;
                     padding: 14px 23px;
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 22px;
+                    @include font18med;
                     color: #00235A;
                     text-decoration: none;
                 }
