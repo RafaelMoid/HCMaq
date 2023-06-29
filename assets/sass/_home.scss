@@ -1,9 +1,21 @@
 #main-home {
     width: 100%;
+    @include mobile-deitado {
+        width: 100%;
+        max-width: 100%;
+    }
 
     .swiper {
         width: 100%;
-        height: calc( 100vh - 139px );
+        height: calc(100vh - 139px);
+
+        @include mobile {
+            height: 80vw;
+        }
+
+        @include mobile-deitado {
+            height: 100vh;
+        }
 
         .swiper-wrapper {
             width: 100%;
@@ -25,21 +37,55 @@
                     bottom: 71px;
                     background: rgba(0, 0, 0, 0.6);
                     padding: 57px;
+                    
+                    @include mobile {
+                        padding: 16px;
+                        height: 60%;
+                        width: 60%;
+                    }
 
                     h2 {
-                        font-family: 'Fira Sans Condensed';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 40px;
-                        line-height: 48px;
+                        @include font24med;
                         color: #FFFFFF;
+
+                        @include mobile {
+                            @include font36bold;
+                            font-size: 30px;
+                            font-weight: 400px;
+                        }
                     }
+
+                    .mobile {
+                        display: none;
+                    }
+
+                    @include mobile {
+                        .web {
+                            display: none;
+                        }
+
+                        .mobile {
+                            display: block;
+                        }
+                    }
+
+                    @include mobile-deitado {
+
+                        left: 50px;
+
+                        .web {
+                            display: none;
+                        }
+
+                        .mobile {
+                            display: block;
+                        }
+                    }
+
 
                     p {
                         font-style: normal;
-                        font-weight: 300;
-                        font-size: 24px;
-                        line-height: 29px;
+                        @include font16light;
                         color: #FFFFFF;
                     }
 
@@ -63,26 +109,28 @@
         background-color: white;
         position: relative;
 
+
         .second-image-wrapper {
             position: absolute;
-            position: absolute;
-            width: 310px;
+            width: 176px;
             left: 0;
             right: 0;
+            top: 50%;
+            transform: translateY(-50%);
             margin: auto;
-            padding: 53px 820px 0 0 !important;
+            padding: 0 65vw 0 0 !important;
 
             @include tablet {
                 padding-top: 83px !important;
-                width: 250px;
+                // width: 250px;
             }
-            
+
             @include mobile {
                 display: none !important;
             }
 
             @include mobile-deitado {
-                display: none !important;
+                width: 173px;
             }
 
 
@@ -98,15 +146,26 @@
 
         .blue-box-wrapper {
             border: 5px solid $main-blue;
+            width: 64.93vw;
+
+            @include mobile {
+                width: 90vw;
+            }
+
+            @include mobile-deitado{
+                width: 77.9vw;
+                margin-left: 16.3vw;
+                margin-right: 5vw;
+            }
 
             div {
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
-                padding: 50px 40px 50px 200px;
+                padding: 50px 2.7vw 50px 10vw;
 
-                @include mobile {
-                    padding: 50px 12px 50px 12px;
+                @include mobile-deitado{
+                    padding-left: 16vw;
                 }
 
                 h4 {
@@ -175,19 +234,23 @@
         padding-left: 11.31vw;
         padding-top: 50px;
 
+        @include mobile {
+            padding-right: 12px;
+        }
+
+        @include mobile-deitado {
+            padding-right: 50px;
+        }
+
         h5 {
             font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 29px;
+            @include font18med;
             color: #A9ABAE;
         }
 
         h3 {
             font-style: normal;
-            font-weight: 600;
-            font-size: 38px;
-            line-height: 46px;
+            @include font24bold;
             color: #FFFFFF;
         }
 
@@ -213,9 +276,7 @@
 
         p {
             font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 24px;
+            @include font20med;
             color: #FFFFFF;
             margin-bottom: 55px;
         }
@@ -244,6 +305,15 @@
                         align-items: center;
                         position: relative;
 
+                        @include mobile-deitado {
+                            width: 41.5vw;
+                            height: 41.5vw;
+
+                            &:nth-child(3) {
+                                display: none;
+                            }
+                        }
+
                         @include mobile {
                             width: 80vw;
                             height: 80vw;
@@ -252,6 +322,11 @@
                         img {
                             max-width: 100%;
                             max-height: 100%;
+
+                            @include mobile-deitado{
+                                height: 100%;
+                                width: 100%;
+                            }
                         }
 
                         .hover-produto {
@@ -338,9 +413,7 @@
 
         h3 {
             font-style: normal;
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 38px;
+            @include font18bold;
             margin-left: 11.31vw;
             margin-right: 27px;
             color: #FFFFFF;
@@ -355,9 +428,7 @@
         a {
             text-decoration: none;
             font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 28px;
+            @include font16med;
             color: $main-blue;
             padding: 12px 22px;
             background-color: white;
@@ -382,6 +453,11 @@
             padding-left: 0;
         }
 
+        @include mobile-deitado {
+            grid-template-columns: 1fr;
+            padding: 0 5.92vw;
+        }
+
         .diferencial {
             display: flex;
             flex-direction: row;
@@ -397,6 +473,10 @@
             img {
                 margin-right: 15px;
                 max-height: 100px;
+
+                @include mobile {
+                    max-height: 360px;
+                }
             }
 
             h2 {
@@ -432,9 +512,7 @@
             }
 
             p {
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 17px;
+                @include font18med;
                 color: $gray-text;
                 margin-bottom: 30px;
             }
@@ -775,6 +853,10 @@
             @include mobile {
                 grid-template-columns: 1fr;
             }
+            
+            @include mobile-deitado {
+                grid-template-columns: 1fr 1fr;
+            }
 
 
             div {
@@ -807,7 +889,7 @@
                     margin-bottom: 20px;
                     color: $gray-text;
                     padding-bottom: 20px;
-                    
+
                     @include mobile {
                         font-size: 18px;
                         line-height: 22px;

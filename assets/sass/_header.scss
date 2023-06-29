@@ -5,9 +5,14 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+    height: 89px;
 
     .logo {
         margin: 16px 0 30px 11vw;
+        img {
+            max-height: 100%;
+            height: 50px;
+        }
 
         @include tablet {
             margin: auto;
@@ -23,10 +28,14 @@
 
     .nav-web {
         margin-right: 6vw;
-        height: 139px;
+        height: 89px;
 
         @include tablet {
             display: none;
+        }
+
+        @include mobile-deitado{
+            display: flex
         }
 
         ul {
@@ -35,17 +44,14 @@
 
             li {
                 @include display (flex, row, center, center);
-                padding: 0 12px;
+                padding: 0 15px;
                 height: 100%;
 
                 a {
                     @include display (flex, row, center, center);
                     height: 100%;
                     text-decoration: none;
-                    font-weight: 400;
-                    font-size: 20px;
-                    line-height: 24px;
-                    letter-spacing: 0.05em;
+                    @include font14med;
                     color: $main-blue;
                     text-transform: uppercase;
                 }
@@ -118,6 +124,10 @@
                     }
                 }
         }
+    }
+
+    @include mobile-deitado{
+        display: none;
     }
 }
 }

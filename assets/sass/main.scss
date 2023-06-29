@@ -217,6 +217,14 @@ $gray-light: #D9D9D9;
     text-align: left;
 }
 
+@mixin font18med {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
 @mixin font18bold {
     font-size: 18px;
     font-weight: 700;
@@ -300,7 +308,7 @@ $gray-light: #D9D9D9;
 }
 
 @mixin mobile-deitado {
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1000px) and (max-height: 600px) {
         @content;
     }
 }

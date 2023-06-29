@@ -14,12 +14,15 @@
       <!-- Slides -->
       <div class="swiper-slide" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/produtos-banner-1.png);">
         <div class="slide1-content">
-          <h2>
+          <h2 class="web">
             ELEVE SUA <br />
             EMPRESA <br />
             AO PRÓXIMO <br />
             NÍVEL <br />
             COM A HCMAQ. <br />
+          </h2>
+          <h2 class="mobile">
+            ELEVE SUA EMPRESA<br /> AO PRÓXIMO NÍVEL<br /> COM A HCMAQ.
           </h2>
           <p>
             Especialista em guindautos
@@ -41,19 +44,18 @@
       <div>
         <h4>Especialista em Guindautos</h4>
         <h3>Excelência e Ética</h3>
-        <p>A HCMAQ nasceu em 2007 pela mãos de Hugo Chaves,<br />
-          que se especializou em guindautos a partir da experiência com<br />
+        <p>A HCMAQ nasceu em 2007 pela mãos de Hugo Chaves,
+          que se especializou em guindautos a partir da experiência com
           o tio, e que
-          hoje representa a TKA Kranes, uma das melhores<br />
-          e mais conceituadas indústrias internacionalmente.<br />
-          Um empresa que está presente em mais de 20 países no mundo,<br />
+          hoje representa a TKA Kranes, uma das melhores
+          e mais conceituadas indústrias internacionalmente.
+          Um empresa que está presente em mais de 20 países no mundo,
           com uma linha completa
           de Guindautos e Acessórios.</p>
         <!-- Adicionar aqui o Link para o sobre? -->
         <a href="<?php echo get_home_url() ?>/historico">Saiba mais</a>
         <!-- Adicionar aqui o Link para o sobre? -->
       </div>
-      <div style="position: absolute; top: -90px; z-index: -100;" id="historico"></div>
   </section>
   <!-- Segunda seção -->
   <!-- Terceira seção -->
