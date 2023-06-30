@@ -4,9 +4,8 @@
       <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Marca Web Cabeçalho 1.png" alt="">
       <p>A HCMAQ é uma empresa que tem como missão atender os seus clientes com qualidade, rapidez
         e eficiência, apresentando o que há de melhor em produtos e serviços relacionados a guindauto
-        e acessórios.
-        </br></br>
-        Para cumprir essa missão, a empresa se dedica a oferecer soluções personalizadas
+        e acessórios.</p>
+      <p class="cut-mob-footer">Para cumprir essa missão, a empresa se dedica a oferecer soluções personalizadas
         e inovadoras, que atendam às necessidades específicas de cada cliente. </p>
     </div>
     <div class="middle">
