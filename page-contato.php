@@ -17,14 +17,17 @@
             ?>
         </div>
         <div class="contact-wrapper">
-            <h4>Nossos Contatos</h4>
-            <p>
-                Avenida Rio Capibaribe</br>
-                Lot Integração de Muribeca, 29</br>
-                Marcos Freire, Recife - PE</br>
-                CEP 54365-615 </br></br>
-                Telefone: (81) 99131 9496
-            </p>
+            <div class="ajust-ctt">
+                <h4>Nossos Contatos</h4>
+                <p>
+                    Avenida Rio Capibaribe</br>
+                    Lot Integração de Muribeca, 29</br>
+                    Marcos Freire, Recife - PE</br>
+                    CEP 54365-615 </br></br>
+                    Telefone: (81) 99131 9496
+                </p>
+            </div>
+
             <a href="https://api.whatsapp.com/send?phone=5581991319496"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/WhatsappBranco.png" alt="">Fale com um dos nossos Colaboradores</a>
         </div>
     </div>

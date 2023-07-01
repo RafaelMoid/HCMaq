@@ -1975,14 +1975,18 @@ html {
   flex-direction: column;
 }
 #contato .head {
-  height: 180px;
+  height: 150px;
   background-color: #006599;
 }
 #contato .head h1 {
-  font-weight: 800;
-  font-size: 64px;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 38.4px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
   color: #FFFFFF;
-  padding: 90px 0 0 11.32vw;
+  padding: 75px 0 0 11.32vw;
 }
 @media screen and (max-width: 600px) {
   #contato .head {
@@ -2004,6 +2008,11 @@ html {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+  #contato .content-fl {
+    flex-direction: column;
+  }
+}
 #contato .content-fl h1 {
   font-weight: 700;
   font-size: 32px;
@@ -2020,6 +2029,14 @@ html {
     width: 90vw;
     margin: 0 auto;
     padding-left: 0;
+  }
+}
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+  #contato .content-fl .form-wrapper {
+    width: 90vw;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-bottom: 45px;
   }
 }
 #contato .content-fl .form-wrapper p input {
@@ -2055,6 +2072,11 @@ html {
     width: 90vw;
   }
 }
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+  #contato .content-fl .form-wrapper p span input {
+    width: 90vw;
+  }
+}
 #contato .content-fl .form-wrapper p span input::placeholder {
   font-weight: 400;
   font-size: 18px;
@@ -2080,6 +2102,11 @@ html {
     margin-top: 20px;
   }
 }
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+  #contato .content-fl .form-wrapper p span textarea {
+    width: 90vw;
+  }
+}
 #contato .content-fl .form-wrapper p span textarea::placeholder {
   padding: 8px 0 0 8px;
   font-style: normal;
@@ -2096,17 +2123,30 @@ html {
     margin: 60px auto 0 auto;
   }
 }
-#contato .content-fl .contact-wrapper h4 {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+  #contato .content-fl .contact-wrapper {
+    width: 90vw;
+    padding-left: 5.92vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+#contato .content-fl .contact-wrapper .ajust-ctt h4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
   color: #00235A;
 }
-#contato .content-fl .contact-wrapper p {
+#contato .content-fl .contact-wrapper .ajust-ctt p {
   font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
   color: #00235A;
   padding-bottom: 30px;
 }
@@ -2114,21 +2154,24 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 550px;
-  height: 80px;
+  width: 330px;
+  height: 60px;
   background: #006599;
   border-radius: 10px;
-  padding: 0 20px;
+  padding: 0 10px;
   text-decoration: none;
   color: white;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
   letter-spacing: 0.05em;
 }
 #contato .content-fl .contact-wrapper a img {
-  max-height: 60px;
-  height: 60px;
+  max-height: 30px;
+  height: 30px;
   margin-right: 12px;
 }
 @media screen and (max-width: 600px) {
@@ -2141,6 +2184,13 @@ html {
     max-width: 30px;
     height: 30px;
     width: 30px;
+  }
+}
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+  #contato .content-fl .contact-wrapper a {
+    position: relative;
+    top: 0;
+    left: 0;
   }
 }
 #contato .map-wrapper {
