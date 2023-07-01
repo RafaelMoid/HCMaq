@@ -9,6 +9,7 @@
 
     .logo {
         margin: 16px 0 30px 11vw;
+
         img {
             max-height: 100%;
             height: 50px;
@@ -17,11 +18,24 @@
         @include tablet {
             margin: auto;
             height: 60px;
-            display: flex;
-            align-items: center;
+            position: absolute;
+            left: 11.32vw;
 
             img {
-                height: 50%;
+                height: 80%;
+            }
+        }
+
+        @include mobile-deitado {
+            margin: auto;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: 0;
+
+            img {
+                height: 70%;
             }
         }
     }
@@ -34,8 +48,8 @@
             display: none;
         }
 
-        @include mobile-deitado{
-            display: flex
+        @include mobile-deitado {
+            display: flex;
         }
 
         ul {
@@ -64,6 +78,7 @@
 
         @include tablet {
             display: flex;
+            padding-left: 85vw;
 
             .menu-icon {
                 cursor: pointer;
@@ -123,13 +138,13 @@
                         }
                     }
                 }
+            }
+        }
+
+        @include mobile-deitado {
+            display: none;
         }
     }
-
-    @include mobile-deitado{
-        display: none;
-    }
-}
 }
 
 .active-header {
@@ -139,4 +154,13 @@
     a {
         color: white !important;
     }
+}
+
+#header {
+    transition: transform 0.3s ease-out;
+    transform: translateY(0);
+}
+
+#header.hidden {
+    transform: translateY(-100%);
 }

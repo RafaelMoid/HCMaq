@@ -1,7 +1,9 @@
 <footer id="footer">
   <div class="footer-top">
     <div class="left">
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Marca Web Cabeçalho 1.png" alt="">
+      <div class="img-footer-wrapper">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Marca Web Cabeçalho 1.png" alt="">
+      </div>
       <p>A HCMAQ é uma empresa que tem como missão atender os seus clientes com qualidade, rapidez
         e eficiência, apresentando o que há de melhor em produtos e serviços relacionados a guindauto
         e acessórios.</p>
@@ -68,22 +70,26 @@
     <p>MANAD, 2023 TODOS OS DIREITOS RESERVADOS.</p>
   </div>
 </footer>
-<!-- <script type="module">
-  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
-
-  const swiper = new Swiper(...)
-</script>
+<!-- Script para esconder o menu na versão mobile deitada -->
 <script>
-  const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
+  var prevScrollPos = window.pageYOffset;
+  var menu = document.getElementById("header");
 
-    autoplay: {
-      delay: 3000, // Tempo de exibição de cada slide em milissegundos
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+
+    if (window.matchMedia("(max-width: 1000px) and (max-height: 600px)").matches) {
+      if (prevScrollPos > currentScrollPos) {
+        menu.classList.remove("hidden");
+      } else {
+        menu.classList.add("hidden");
+      }
     }
-  });
-</script> -->
+
+    prevScrollPos = currentScrollPos;
+  }
+</script>
+<!-- Script para esconder o menu na versão mobile deitada -->
 </body>
 
 </html>

@@ -12,19 +12,6 @@
         <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/produtos-banner-1.png);">
-                <div class="slide1-content">
-                    <h2>
-                        ELEVE SUA <br />
-                        EMPRESA <br />
-                        AO PRÓXIMO <br />
-                        NÍVEL <br />
-                        COM A HCMAQ. <br />
-                    </h2>
-                    <p>
-                        Especialista em guindautos
-                    </p>
-                    <div class="blue-little-box"></div>
-                </div>
             </div>
             <!-- <div class="swiper-slide">Slide 2</div>
       <div class="swiper-slide">Slide 3</div> -->
@@ -39,7 +26,7 @@
         </div>
         <p>A HCMAQ tem uma seleção de peças Semi-Novas para todas as suas necessidades.</p>
         <!-- Grid com produtos Usados-->
-        <div class="swiper">
+        <div class="swiperprodutos">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->

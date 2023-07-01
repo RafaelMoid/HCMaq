@@ -14,12 +14,13 @@
         justify-content: flex-end;
         padding-left: 11.31vw;
 
+        @include mobile-deitado {
+            height: calc(100vh - 100px);
+        }
+
         h1 {
             width: fit-content;
-            font-weight: 900;
-            font-size: calc(36px + 1vw);
-            line-height: 40px;
-            letter-spacing: 0.05em;
+            @include font36bold;
             color: #FFFFFF;
         }
 
@@ -45,10 +46,7 @@
 
         h2 {
             width: fit-content;
-            font-weight: 600;
-            font-size: calc(22px + 0.5vw);
-            line-height: 26px;
-            letter-spacing: 0.05em;
+            @include font20bold;
             padding-bottom: 52px;
             color: #FFFFFF;
         }
@@ -70,6 +68,12 @@
             padding-top: 60px;
         }
 
+        @include mobile-deitado {
+            flex-direction: column;
+            padding: 0 5.92vw;
+            padding-top: 35px;
+        }
+
         .img-wrapper {
             height: 750px;
             width: 52vw;
@@ -81,6 +85,13 @@
                 height: 300px;
                 width: 90vw;
                 margin: 0 auto;
+            }
+
+            @include mobile-deitado {
+                height: 100vh;
+                width: 100%;
+                background-position: center 70%;
+                margin-bottom: 40px;
             }
         }
 
@@ -94,10 +105,14 @@
                 margin: 0 auto;
             }
 
+            @include mobile-deitado {
+                padding: 0;
+                width: 100%;
+                padding-bottom: 70px;
+            }
+
             h2 {
-                font-size: 26px;
-                line-height: 30px;
-                letter-spacing: 0.05em;
+                @include font32bold;
                 color: $main-blue;
             }
 
@@ -122,10 +137,7 @@
             }
 
             p {
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 24px;
-                letter-spacing: 0.05em;
+                @include font20med;
 
                 color: $main-blue;
             }
@@ -142,9 +154,13 @@
         align-items: flex-start;
         padding: 91px 6.94vw 59px 11.32vw;
 
-        @include mobile{
+        @include mobile {
             padding: 60px 0 60px 30px;
-            flex-direction: column ;
+            flex-direction: column;
+        }
+
+        @include mobile-deitado {
+            padding: 45px 5.92vw 33.7px 5.92vw;
         }
 
         div {
@@ -190,6 +206,10 @@
                 line-height: 24px;
                 padding-right: 80px;
                 color: #FFFFFF;
+
+                @include mobile-deitado {
+                    width: 100%;
+                }
             }
         }
     }
@@ -197,54 +217,57 @@
     .diferencial {
         padding: 91px 6.94vw 59px 11.32vw;
 
-        @include mobile{
+        @include mobile {
             padding: 60px 0 60px 30px;
-            flex-direction: column ;
+            flex-direction: column;
         }
 
+        @include mobile-deitado{
+            padding: 70px 5.92vw;
+        }
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        h3 {
+            @include font32bold;
+            color: $main-blue;
+
+            @include mobile {
+                padding-top: 36px;
+            }
+        }
+
+        .lines {
+            height: 7px;
+            width: 120px;
             display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            flex-direction: row;
+            margin: 15px 0;
 
-            h3 {
-                font-weight: 900;
-                font-size: calc(36px + 1vw);
-                line-height: calc(38px + 1vw);
-                letter-spacing: 0.05em;
-                color: $main-blue;
-
-                @include mobile {
-                    padding-top: 36px;
-                }
-            }
-
-            .lines {
+            .line1 {
                 height: 7px;
-                width: 120px;
-                display: flex;
-                flex-direction: row;
-                margin: 15px 0;
-
-                .line1 {
-                    height: 7px;
-                    width: 60px;
-                    background-color:#00235A;
-                    ;
-                }
-
-                .line2 {
-                    height: 7px;
-                    width: 60px;
-                    background-color: $main-blue;
-                }
+                width: 60px;
+                background-color: #00235A;
+                ;
             }
 
-            p {
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 24px;
-                padding-right: 80px;
-                color: $main-blue;
+            .line2 {
+                height: 7px;
+                width: 60px;
+                background-color: $main-blue;
             }
+        }
+
+        p {
+            @include font20med;
+            padding-right: 80px;
+            color: $main-blue;
+
+            @include mobile-deitado{
+                width: 100%;
+            }
+        }
     }
 }

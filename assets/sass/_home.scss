@@ -10,7 +10,7 @@
         height: calc(100vh - 139px);
 
         @include mobile {
-            height: 80vw;
+            height: 80vh;
         }
 
         @include mobile-deitado {
@@ -40,8 +40,12 @@
                     
                     @include mobile {
                         padding: 16px;
-                        height: 60%;
+                        height: 50%;
                         width: 60%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        // align-items: center;
                     }
 
                     h2 {
@@ -893,6 +897,10 @@
                         font-size: 20px;
                         line-height: 24px;
                     }
+
+                    @include mobile-deitado{
+                        padding-top: 0;
+                    }
                 }
 
                 .resumo-post {
@@ -904,6 +912,11 @@
                     @include mobile {
                         font-size: 18px;
                         line-height: 22px;
+                    }
+
+                    @include mobile-deitado{
+                        margin-bottom: 0;
+                        padding-bottom: 30px;
                     }
 
                     @media screen and (min-width: 1441px) {
@@ -920,6 +933,10 @@
                     height: 71px;
                     width: 54px;
                     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0);
+
+                    @include mobile-deitado{
+                        top: 0;
+                    }
 
                     .dia {
                         display: flex;

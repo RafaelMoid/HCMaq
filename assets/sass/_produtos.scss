@@ -5,7 +5,11 @@
 
         .swiper-wrapper {
             width: 100%;
-            height: 100%;
+            height: 515px;
+            
+            @include mobile-deitado{
+                height: 62vh;                
+            }
 
             .swiper-slide {
                 width: 100%;
@@ -60,19 +64,20 @@
         padding-left: 11.31vw;
         padding-top: 50px;
 
+        @include mobile-deitado {
+            padding: 53px 5.92vw;
+        }
+
         h5 {
             font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 29px;
+            @include font24med;
             color: #A9ABAE;
         }
 
         h3 {
             font-style: normal;
+            @include font32bold;
             font-weight: 600;
-            font-size: 38px;
-            line-height: 46px;
             color: #FFFFFF;
         }
 
@@ -98,16 +103,18 @@
 
         p {
             font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 24px;
+            @include font20med;
             color: #FFFFFF;
             margin-bottom: 55px;
         }
 
-        .swiper {
+        .swiperprodutos {
             height: fit-content !important;
             padding-bottom: 115px;
+
+            @include mobile-deitado {
+                padding-bottom: 0;
+            }
 
             .swiper-wrapper {
                 .swiper-produtos-carrossel {
@@ -118,6 +125,11 @@
 
                     @include mobile {
                         flex-direction: column;
+                    }
+
+                    @include mobile-deitado {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
                     }
 
                     .produto {
@@ -132,6 +144,11 @@
                         @include mobile {
                             width: 80vw;
                             height: 80vw;
+                        }
+
+                        @include mobile-deitado {
+                            width: 42vw;
+                            height: 42vw;
                         }
 
                         img {
@@ -218,19 +235,20 @@
         padding-right: 11.31vw;
         padding-top: 50px;
 
+        @include mobile-deitado {
+            padding: 5.92vw;
+        }
+
         h5 {
             font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 29px;
+            @include font24med;
             color: #00235A;
         }
 
         h3 {
             font-style: normal;
+            @include font32bold;
             font-weight: 600;
-            font-size: 38px;
-            line-height: 46px;
             color: #006599;
         }
 
@@ -260,6 +278,11 @@
             @include mobile{
                 grid-template-columns: 1fr;
             }
+            
+            @include mobile-deitado{
+                grid-template-columns: 1fr 1fr;
+            }
+
             gap: 31px;
             margin-bottom: 84px;
 
@@ -271,6 +294,11 @@
                 @include mobile {
                     width: 80vw;
                     height: 80vw;
+                }
+                
+                @include mobile-deitado {
+                    width: 42vw;
+                    height: 42vw;
                 }
 
                 .hover-produto {
