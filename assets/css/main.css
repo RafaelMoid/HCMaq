@@ -2368,11 +2368,16 @@ html {
   flex-direction: column;
 }
 #parceiros .intro-parceiros {
-  height: 285px;
+  height: fit-content;
   padding-left: 11.32vw;
   padding-right: 32px;
-  padding-top: 165px;
-  margin-bottom: 70px;
+  padding-top: 121px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 @media screen and (max-width: 600px) {
   #parceiros .intro-parceiros {
@@ -2381,12 +2386,19 @@ html {
     height: fit-content;
   }
 }
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+  #parceiros .intro-parceiros {
+    padding: 5.92vw;
+    height: fit-content;
+  }
+}
 #parceiros .intro-parceiros h1 {
   font-style: normal;
-  font-weight: 900;
-  font-size: 70px;
-  line-height: 84px;
-  letter-spacing: 0.05em;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: left;
   color: #FFFFFF;
 }
 @media screen and (max-width: 600px) {
@@ -2410,17 +2422,24 @@ html {
   background: #A9ABAE;
 }
 #parceiros .intro-parceiros p {
+  width: 60%;
   font-style: normal;
+  font-size: 20px;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
-  letter-spacing: 0.05em;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
   color: #FFFFFF;
 }
 @media screen and (max-width: 600px) {
   #parceiros .intro-parceiros p {
     font-size: 18px;
     line-height: 22px;
+  }
+}
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+  #parceiros .intro-parceiros p {
+    width: 100%;
   }
 }
 #parceiros .parceiro {
@@ -2438,12 +2457,22 @@ html {
     padding-bottom: 72px;
   }
 }
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+  #parceiros .parceiro {
+    padding: 0 5.92vw;
+  }
+}
 #parceiros .parceiro .left-parceiro {
   width: 35.9vw;
 }
 @media screen and (max-width: 600px) {
   #parceiros .parceiro .left-parceiro {
     width: 90vw;
+  }
+}
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+  #parceiros .parceiro .left-parceiro {
+    display: none;
   }
 }
 #parceiros .parceiro .left-parceiro img {
@@ -2471,6 +2500,11 @@ html {
     align-items: center;
   }
 }
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+  #parceiros .parceiro .right-parceiro {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 600px) {
   #parceiros .parceiro .right-parceiro img {
     max-width: 90vw;
@@ -2494,10 +2528,11 @@ html {
 }
 #parceiros .parceiro .right-parceiro p {
   font-style: normal;
+  font-size: 20px;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
-  letter-spacing: 0.05em;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
   color: #006599;
 }
 @media screen and (max-width: 600px) {

@@ -16,7 +16,7 @@
             A HCMAQ representa um grupo diversificado de empresas inovadoras em diversos setores.
             Com um compromisso compartilhado com a excelência e a qualidade, essas empresas estão
             impulsionando avanços significativos em suas respectivas indústrias. Com expertise
-            em manufatura, tecnologia, engenharia e muito mais,
+            em manufatura, tecnologia, engenharia e muito mais.
         </p>
     </div>
     <?php
