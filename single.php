@@ -33,14 +33,14 @@
       <?php
       } else {
       ?>
-        <div class="header-single">
+        <div class="header-single produto-single">
           <h1><?php the_title(); ?></h1>
         </div>
         <section class="conteudo-single">
           <div class="left-single">
             <img src="<?php echo get_field('thumbnail_image') ?>" alt="">
           </div>
-          <div class="right-single">
+          <div class="right-single produto-text">
             <h2>Descrição:</h2>
             <p id="desc-prod"><?php echo get_field('descricao_detalhada_produto') ?></p>
             <!-- <h2>Características:</h2>

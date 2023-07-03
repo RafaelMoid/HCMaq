@@ -1623,8 +1623,8 @@ html {
 }
 @media screen and (max-width: 1000px) and (max-height: 600px) {
   #produtos .acessorios-guindauto .acessorios-wrapper .produto {
-    width: 42vw;
-    height: 42vw;
+    width: 38vw;
+    height: 38vw;
   }
 }
 #produtos .acessorios-guindauto .acessorios-wrapper .produto .hover-produto {
@@ -2210,7 +2210,6 @@ html {
 
 #single .header-single {
   height: fit-content;
-  width: 100%;
   display: flex;
   flex-direction: column;
   padding-left: 11.32vw;
@@ -2225,7 +2224,7 @@ html {
   height: 37px;
   position: absolute;
   left: 0;
-  top: 196px;
+  top: 146px;
   background-color: #00235A;
   z-index: 1;
 }
@@ -2237,10 +2236,11 @@ html {
 }
 #single .header-single h1 {
   margin-top: 50px;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: left;
   /* identical to box height */
   letter-spacing: 0.05em;
   color: #006599;
@@ -2288,12 +2288,27 @@ html {
     padding-top: 120px;
   }
 }
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+  #single #post-style {
+    padding: 60px 0;
+  }
+}
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+  #single #post-style .left-content-post {
+    width: 100vw;
+  }
+}
 #single #post-style .left-content-post img {
   width: 100%;
   max-height: 300px;
 }
 #single #post-style .right-content-post {
   padding-top: 45px;
+}
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+  #single #post-style .right-content-post {
+    padding: 45px 5.92vw 0 5.92vw;
+  }
 }
 #single #post-style .right-content-post p {
   font-style: normal;
@@ -2317,6 +2332,13 @@ html {
     padding-bottom: 60px;
   }
 }
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+  #single .conteudo-single {
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+}
 #single .conteudo-single .left-single {
   width: 45vw;
   padding-left: 11.32vw;
@@ -2327,6 +2349,11 @@ html {
     width: 90vw;
     margin: 0 auto;
     padding: 45px 0 0 0;
+  }
+}
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+  #single .conteudo-single .left-single {
+    padding: 26px 0 12px 5.92vw;
   }
 }
 #single .conteudo-single .left-single img {
@@ -2349,7 +2376,7 @@ html {
   line-height: 48px;
   letter-spacing: 0.05em;
   color: #006599;
-  padding-bottom: 30px;
+  padding-bottom: 12px;
 }
 #single .conteudo-single .right-single #desc-prod {
   font-style: normal;
@@ -2376,22 +2403,24 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 550px;
-  height: 80px;
+  width: 330px;
+  height: 60px;
   background: #006599;
   border-radius: 10px;
-  padding: 0 20px;
+  padding: 0 10px;
   text-decoration: none;
   color: white;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
   letter-spacing: 0.05em;
-  margin-top: 100px;
 }
 #single .conteudo-single .right-single a img {
-  max-height: 60px;
-  height: 60px;
+  max-height: 30px;
+  height: 30px;
   margin-right: 12px;
 }
 @media screen and (max-width: 600px) {
@@ -2406,10 +2435,44 @@ html {
     width: 30px;
   }
 }
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+  #single .conteudo-single .right-single a {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+#single .conteudo-single .produto-text h2 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 38.4px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+  #single .conteudo-single .produto-text {
+    padding: 0 0 0 5.92vw;
+    width: 85%;
+  }
+}
 #single .line-bottom {
   height: 7px;
   background-color: #00235A;
   margin: 0 11.32vw 60px 11.32vw;
+}
+
+.produto-single {
+  height: 160px;
+  background-color: #00527C;
+  padding-bottom: 24px;
+}
+@media screen and (max-width: 1000px) and (max-height: 600px) {
+  .produto-single {
+    padding: 0 0 24px 5.92vw !important;
+  }
+}
+.produto-single h1 {
+  color: white !important;
 }
 
 #parceiros {
