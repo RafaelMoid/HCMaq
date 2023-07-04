@@ -11,7 +11,7 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/produtos-banner-1.png);">
+            <div class="swiper-slide" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/paginadeprodutos.png);">
             </div>
             <!-- <div class="swiper-slide">Slide 2</div>
       <div class="swiper-slide">Slide 3</div> -->
@@ -48,7 +48,7 @@
                                 <div class="hover-produto">
                                     <h2><?php echo get_field('nome') ?></h2>
                                     <h3><?php echo get_field('resumo_thumb') ?></h3>
-                                    <a href="<?php echo get_permalink(); ?>">Saiba mais</a>
+                                    <a href="https://api.whatsapp.com/send?phone=5581991319496">Saiba mais</a>
                                 </div>
                                 <img src="<?php echo get_field('thumbnail_image') ?>" alt="<?php echo get_field('titulo_thumb') ?>">
                             </div>

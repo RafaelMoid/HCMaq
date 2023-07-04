@@ -37,6 +37,21 @@
                     bottom: 71px;
                     background: rgba(0, 0, 0, 0.6);
                     padding: 57px;
+
+                    .blue-little-box {
+                        display: flex;
+                        position: absolute;
+                        width: 35px;
+                        height: 35px;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background-color: #006599;
+
+                        @include mobile{
+                            display: none;
+                        }
+                    }
                     
                     @include mobile {
                         padding: 16px;

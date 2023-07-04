@@ -11,6 +11,10 @@
         e inovadoras, que atendam às necessidades específicas de cada cliente. </p>
     </div>
     <div class="middle">
+      <div class="instagram">
+        <h4>Siga-nos nas Redes Sociais</h4>
+        <div><a href="https://www.instagram.com/hcmaqguindauto/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/IconeInsta.png" alt="">&nbsp;&nbsp;@hcmaqguindauto</a></div>
+      </div>
       <div class="footer-icons">
         <div class="icon-wrapper">
           <div class="icon">
@@ -29,12 +33,12 @@
           <div class="icon-text">
             <h4>Contato</h4>
             <a href="tel:+5581991319496">(81) 99131 9496</a>
-            <a href="mailto:User0123@example.com">User0123@example.com</a>
+            <a href="mailto:User0123@example.com">hugo@hcmaq.com.br</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="right">
+    <!-- <div class="right">
       <h4>Postagens Recentes</h4>
       <div class="footer-blog-posts">
         <?php
@@ -64,7 +68,7 @@
 
 
       </div>
-    </div>
+    </div> -->
   </div>
   <div class="footer-bottom">
     <p>MANAD, 2023 TODOS OS DIREITOS RESERVADOS.</p>
@@ -88,6 +92,17 @@
 
     prevScrollPos = currentScrollPos;
   }
+</script>
+<script>
+  var swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+  });
 </script>
 <!-- Script para esconder o menu na versão mobile deitada -->
 </body>

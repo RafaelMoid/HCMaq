@@ -34,6 +34,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- Header Wordpress -->
@@ -82,29 +84,29 @@
             <nav class="menu">
                 <ul>
                     <li onclick="closeMenu()" <?php if (is_front_page('')) {
-                            echo 'class="active-header"';
-                        } else {
-                        } ?>><a href="<?php echo get_home_url() ?>">Home</a></li>
+                                                    echo 'class="active-header"';
+                                                } else {
+                                                } ?>><a href="<?php echo get_home_url() ?>">Home</a></li>
                     <li onclick="closeMenu()" <?php if (is_page('historico')) {
-                            echo 'class="active-header"';
-                        } else {
-                        } ?>><a href="<?php echo get_home_url() ?>/historico">Histórico</a></li>
+                                                    echo 'class="active-header"';
+                                                } else {
+                                                } ?>><a href="<?php echo get_home_url() ?>/historico">Histórico</a></li>
                     <li onclick="closeMenu()" <?php if (is_page('produtos')) {
-                            echo 'class="active-header"';
-                        } else {
-                        } ?>><a href="<?php echo get_home_url() ?>/produtos">Produtos</a></li>
+                                                    echo 'class="active-header"';
+                                                } else {
+                                                } ?>><a href="<?php echo get_home_url() ?>/produtos">Produtos</a></li>
                     <li onclick="closeMenu()" <?php if (is_page('parceiros')) {
-                            echo 'class="active-header"';
-                        } else {
-                        } ?>><a href="<?php echo get_home_url() ?>/parceiros">Parceiros</a></li>
+                                                    echo 'class="active-header"';
+                                                } else {
+                                                } ?>><a href="<?php echo get_home_url() ?>/parceiros">Parceiros</a></li>
                     <li onclick="closeMenu()" <?php if (is_page('blog')) {
-                            echo 'class="active-header"';
-                        } else {
-                        } ?>><a href="<?php echo get_home_url() ?>#blog">Blog</a></li>
+                                                    echo 'class="active-header"';
+                                                } else {
+                                                } ?>><a href="<?php echo get_home_url() ?>#blog">Blog</a></li>
                     <li onclick="closeMenu()" <?php if (is_page('contato')) {
-                            echo 'class="active-header"';
-                        } else {
-                        } ?>><a href="<?php echo get_home_url() ?>/contato">Contato</a></li>
+                                                    echo 'class="active-header"';
+                                                } else {
+                                                } ?>><a href="<?php echo get_home_url() ?>/contato">Contato</a></li>
                 </ul>
             </nav>
         </div>

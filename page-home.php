@@ -12,7 +12,7 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/produtos-banner-1.png);">
+      <div class="swiper-slide" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Banner1.png);">
         <div class="slide1-content">
           <h2 class="web">
             ELEVE SUA <br />
@@ -26,6 +26,44 @@
           </h2>
           <p>
             Especialista em guindautos
+          </p>
+          <div class="blue-little-box"></div>
+        </div>
+      </div>
+      <div class="swiper-slide" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Banner2.png);">
+        <div class="slide1-content">
+          <h2 class="web">
+            QUER SABER MAIS<br />
+            SOBRE NOSSA<br />
+            EMPRESA E <br />
+            PRODUTOS? <br />
+          </h2>
+          <h2 class="mobile">
+            QUER SABER <br />
+            MAIS SOBRE <br />
+            NOSSA EMPRESA <br />
+            E PRODUTOS? <br />
+          </h2>
+          <p>
+            Fale Conosco
+          </p>
+          <div class="blue-little-box"></div>
+        </div>
+      </div>
+      <div class="swiper-slide" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Banner3.png);">
+        <div class="slide1-content">
+          <h2 class="web">
+            CONHEÇA <br />
+            AS NOSSAS<br />
+            SOLUÇÕES<br />
+            PARA SUA <br />
+            EMPRESA. <br />
+          </h2>
+          <h2 class="mobile">
+            CONHEÇA AS NOSSAS<br /> SOLUÇÕES PARA<br /> SUA EMPRESA.
+          </h2>
+          <p>
+            Confira no Catálogo
           </p>
           <div class="blue-little-box"></div>
         </div>
